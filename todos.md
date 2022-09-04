@@ -3,7 +3,7 @@
 - add submit funcation
 - add social media link in contact and footer
 - add hover animation
-- add dropdown in nav
+- edit dropdown in nav(click on other button closes prev opened dropdown)
 
 ### Pages
 - Directory
