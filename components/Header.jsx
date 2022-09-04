@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const Header = () => {
-  return (
+    return (
     <div className="flex bg-[#00004F] justify-center items-center gap-x-60 text-gray-200 pt-4 pb-8">
         <div className='flex gap-x-4 justify-center items-center'>
             <div>
@@ -20,7 +20,7 @@ const Header = () => {
             </button>
         </div>
     </div>
-  )
+    )
 }
 
 export default Header
