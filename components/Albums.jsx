@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Events = () => {
+const Albums = () => {
     return (
         <div className="flex flex-col py-8 justify-center items-center gap-y-8 bg-gray-300 w-screen px-40 text-center">
             <div className="text-3xl font-extrabold">Albums</div>
@@ -22,4 +22,4 @@ const Events = () => {
     )
 }
 
-export default Events
+export default Albums

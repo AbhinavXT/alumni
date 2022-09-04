@@ -6,6 +6,7 @@ import Submissions from '../components/Submissions'
 import Events from '../components/Events'
 import Albums from '../components/Albums'
 import Memories from '../components/Memories'
+import Contact from '../components/Contact'
 
 const Home = () => {
     return (
@@ -42,7 +43,10 @@ const Home = () => {
             <div>
                 <Memories />
             </div>
-            <div></div>
+
+            <div>
+                <Contact />
+            </div>
         </div>
     )
 }
