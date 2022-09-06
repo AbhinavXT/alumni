@@ -24,11 +24,12 @@ const signup = () => {
             <div className='flex flex-col items-center justify-center gap-y-8 px-12'>
                 <div className='text-lg font-light'>Choose any one of the following to Signup/Login</div>
                 <div className='flex flex-col gap-y-4'>
-                    <button className='text-center py-2 px-12 bg-[#365899] rounded text-gray-200'>Connnect with LinkedIn</button>
-                    <button className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'>Connnect with Gmail</button>
-                    <button className='text-center py-2 px-12 bg-[#039BE5] rounded text-gray-200'>Connnect with Twitter</button>
+                    <button className='text-center py-2 px-12 bg-[#365899] rounded text-gray-200'>Connect with LinkedIn</button>
+                    <button className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'>Connect with Gmail</button>
+                    <button className='text-center py-2 px-12 bg-[#039BE5] rounded text-gray-200'>Connect with Twitter</button>
                 </div>
                 <div className='bg-gray-900 text-gray-200 rounded-full p-2'>OR</div>
+                
                 <div className='flex gap-x-4 items-center justify-center'>
                     <form action="submit">
                         <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your email" />

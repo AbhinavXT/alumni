@@ -26,7 +26,7 @@ const NavButtonDropDown = ({ title, dropList }) => {
                 <ul className="text-center py-1 divide-y-2" >
                     {dropList.map((item, i) => (
                         <Link key={i} href={item.path}>
-                            <li>
+                            <li onClick={() => setDropdownOpen(false)}>
                                 <a href="#" className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">{item.title}</a>
                             </li>
                         </Link>
