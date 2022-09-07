@@ -19,6 +19,17 @@ const Navbar = () => {
 
             <NavButton title='NOTICEBOARD' path='/noticeboard' />
 
+            <NavButtonDropDown title='EVENTS' dropList={[
+                {
+                    title: 'Events',
+                    path: '/events'
+                }, 
+                {
+                    title:'Galleries',
+                    path: '/galleries'
+                }
+            ]} />
+
             <NavButtonDropDown title='BATCHMATES' dropList={[
                 {
                     title: 'YearBook',

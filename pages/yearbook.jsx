@@ -1,5 +1,4 @@
 import Year from '../components/Year'
-import Link from 'next/link'
 
 const yearbook = () => {
   return (
