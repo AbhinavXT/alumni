@@ -9,7 +9,11 @@ const yearbook = () => {
         <button className='text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2'>View My Batchmates</button>
       </div>
       <div className='grid grid-cols-4 gap-x-8 gap-y-6 px-[500px]'>
+        <Year batch = '2020' memberNum='1'/>
+        <Year batch = '2021' memberNum='1'/>
+        <Year batch = '2022' memberNum='1'/>
         <Year batch = '2023' memberNum='1'/>
+        <Year batch = '2024' memberNum='1'/>
       </div>
     </div>
   )
