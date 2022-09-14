@@ -12,7 +12,7 @@ const events = () => {
             </div>
         </div>
         
-        <div className="flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1">No more gallaries to display!</div>
+        <div className="flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1">No gallaries to display!</div>
     </div>
   )
 }
