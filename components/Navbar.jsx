@@ -15,7 +15,7 @@ const Navbar = () => {
                     title: 'Alumni NearBy',
                     path: '/nearby'
                 }
-            ]}/>
+            ]} />
 
             <NavButton title='NOTICEBOARD' path='/noticeboard' />
 
