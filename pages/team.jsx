@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const team = () => {
   return (
-    <div className='flex flex-col gap-y-16 -mt-80 mx-[450px]'>
+    <div className='flex flex-col gap-y-16 -mt-60 mx-[400px]'>
       <div className='text-3xl'>GBPIET Alumni Association Committee</div>
       <div className='flex gap-x-16'>
         <div className='flex flex-col gap-y-4'>

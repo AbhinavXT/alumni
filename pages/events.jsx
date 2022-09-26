@@ -3,7 +3,7 @@ import SiteButtonDropDown from "../components/SiteButtonDropDown"
 
 const events = () => {
     return (
-        <div className="flex justify-center gap-x-12 -mt-40">
+        <div className="flex justify-center gap-x-12 -mt-20">
             <div className="flex flex-col gap-y-8 font-bold">
                 <div className='flex gap-x-2 items-center justify-center'>
                     <form action="submit">

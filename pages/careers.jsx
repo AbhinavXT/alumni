@@ -2,7 +2,7 @@ import SiteButton from "../components/SiteButton"
 
 const events = () => {
   return (
-    <div className="flex justify-center gap-x-12 -mt-20">
+    <div className="flex justify-center gap-x-12">
         <div className="flex flex-col gap-y-8 font-bold">
             <div className="text-2xl font-light">JOB CATEGORIES</div>
             <div className="flex flex-col gap-y-4">

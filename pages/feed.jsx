@@ -2,7 +2,7 @@ import SiteButton from "../components/SiteButton"
 
 const feed = () => {
   return (
-    <div className="flex justify-center gap-x-12 -mt-96">
+    <div className="flex justify-center gap-x-12 -mt-80">
         <div className="flex flex-col gap-y-8 font-bold">
             <div className='flex gap-x-2 items-center justify-center'>
                 <form action="submit">
