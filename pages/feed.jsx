@@ -6,7 +6,7 @@ const feed = () => {
         <div className="flex flex-col gap-y-8 font-bold">
             <div className='flex gap-x-2 items-center justify-center'>
                 <form action="submit">
-                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Search by title..." />
+                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Search by title..." />
                 </form>
                 <button className="bg-[#F13617] p-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

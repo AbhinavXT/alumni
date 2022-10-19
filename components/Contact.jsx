@@ -66,21 +66,21 @@ const Contact = () => {
                                     <label htmlFor="username">
                                         Your Email *
                                     </label>
-                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
+                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" />
                                 </div>
                                 
                                 <div className='flex flex-col gap-y-1'>
                                     <label htmlFor="username">
                                         Phone No.
                                     </label>
-                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Phone" />
+                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="number" placeholder="Phone" />
                                 </div>
 
                                 <div className='flex flex-col gap-y-1'>
                                     <label htmlFor="username">
                                         Your Message *
                                     </label>
-                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Message" />
+                                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" type="text" placeholder="Message" />
                                 </div>
 
                                 <button className='flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200'>

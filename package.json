@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.13.1",
+    "google-map-react": "^2.2.0",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
