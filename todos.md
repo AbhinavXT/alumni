@@ -5,6 +5,7 @@
 - add hover animation
 - edit dropdown in nav(click on other button closes prev opened dropdown)
 - correct style for navbar on other pages(incorrect due to flex display)
+- change margins and padding to rems
 
 ### Pages
 - Directory
@@ -12,6 +13,8 @@
 - Jobs and Internship
 - branch student for yearbook
 - profile for student
+- admin page
+- nearby and connect google maps api
 
 ### Components
 
@@ -31,7 +34,7 @@
 - dashboard- stats approve
 - download database
 - mail - group mail
-- socil media
+- social media
 - portal settings
 - choose subAdmin
 - main admin - sub admin only approval

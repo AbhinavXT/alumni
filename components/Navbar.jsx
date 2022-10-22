@@ -3,7 +3,7 @@ import NavButton from './subComponents/NavButton'
 
 const Navbar = () => {
     return (
-        <div className="flex justify-center items-center gap-x-20 py-2 bg-[#F13617] rounded-md mx-[300px] px-12 z-10 -mt-4 text-gray-200 font-semibold">
+        <div className="flex justify-center items-center gap-x-20 py-2 bg-[#F13617] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold">
             <NavButton title='CAMPUSFEED' path='/feed' />
 
             <NavButtonDropDown title='FIND ALUMNI' dropList={[

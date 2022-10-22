@@ -5,7 +5,7 @@ const Albums = () => {
         <div className="flex flex-col py-8 justify-center items-center gap-y-8 bg-gray-300 w-screen px-40 text-center">
             <div className="text-3xl font-extrabold">Albums</div>
             
-            <div className="h-80 w-[379px] shadow-lg">
+            <div className="h-80 w-96 shadow-lg">
                 <div className="flex flex-col justify-center items-center h-5/6">
                     <Image
                         src="/i2.webp"

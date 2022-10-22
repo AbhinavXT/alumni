@@ -91,7 +91,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='bg-gray-200 shadow-lg w-[700px]'>
+                <div className='bg-gray-200 shadow-lg w-[700px] lg:block hidden'>
                     {/* <Image
                         src="/m1.png"
                         alt="Picture of the map"
