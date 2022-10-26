@@ -12,7 +12,7 @@ const Navbar = () => {
                     path: '/directory'
                 }, 
                 {
-                    title: 'Alumni NearBy',
+                    title: 'Alumni Nearby',
                     path: '/nearby'
                 }
             ]} />

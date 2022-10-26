@@ -13,6 +13,7 @@ const invite = () => {
                 />
             </div>
             
+            {/*year prop*/}
             <div className='font-semibold text-xl'>Invite your friends from class of '2023'</div>
         </div>
 
@@ -54,8 +55,8 @@ const invite = () => {
             <div>
                 <form action="submit" className='flex flex-col items-center justify-center gap-y-4'>
                     <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name" />
-                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
-                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Batch" />
+                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" />
+                    <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="batch" type="year" placeholder="Batch" />
 
                     <button className='flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200'>
                         Invite
