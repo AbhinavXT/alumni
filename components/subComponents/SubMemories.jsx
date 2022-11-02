@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const SubMemories = () => {
   return (
-    <div className="h-80 w-[379px] shadow-lg text-justify">
+    <div className="h-80 w-[379px] shadow-lg text-justify hover:scale-105 ease-in duration-500">
         <div className="flex flex-col justify-center items-center h-2/5">
             <Image
                 src="/i1.png"

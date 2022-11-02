@@ -5,7 +5,7 @@ const yearbook = () => {
     <div className='flex flex-col gap-y-16 -mt-44'>
       <div className='flex justify-between items-center px-[300px]'>
         <div className='text-xl font-bold'>Select Year</div>
-        <button className='text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2'>View My Batchmates</button>
+        <button className='text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300'>View My Batchmates</button>
       </div>
       <div className='grid grid-cols-4 gap-x-8 gap-y-6 px-[400px]'>
         <Year batch = '2020' memberNum='1'/>

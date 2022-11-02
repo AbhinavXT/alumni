@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                 </Link>
                 <div>
-                    <button className='flex items-center justify-center bg-[#20205F] px-4 py-2 rounded-lg'>
+                    <button className='flex items-center justify-center bg-[#20205F] px-4 py-2 rounded-lg shadow-lg hover:shadow-[#363691] ease-in duration-500'>
                         <Link href='/signup'>
                             SIGN UP / LOGIN 
                         </Link>

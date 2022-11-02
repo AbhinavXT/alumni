@@ -7,7 +7,7 @@ const events = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false)    
 
     return (
-        <div className="flex justify-center gap-x-12 mb-2 mt-2">
+        <div className="flex justify-center gap-x-12 mb-2 mt-6">
             <div className="flex flex-col gap-y-8 font-bold">
                 <div className="text-2xl font-light">JOB CATEGORIES</div>
                 <div className="flex flex-col gap-y-4">
