@@ -1,6 +1,20 @@
-import Image from 'next/image'
+import GoogleMapReact from 'google-map-react';
+
+const Marker = () =>  {
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+    </svg>
+}
 
 const Contact = () => {
+    const location = {
+        center: {
+          lat: 30.1830,
+          lng: 78.6952
+        },
+        zoom: 15
+    };
+
     return (
         <div className="flex flex-col py-8 items-center gap-y-8 w-screen px-40">
             <div className="text-3xl font-extrabold text-gray-200 bg-[#00004F] w-screen py-16 text-center">Contact</div>
@@ -92,14 +106,15 @@ const Contact = () => {
                 </div>
 
                 <div className='bg-gray-200 shadow-lg w-[700px] lg:block hidden'>
-                    {/* <Image
-                        src="/m1.png"
-                        alt="Picture of the map"
-                        width={600}
-                        height={950}
-                    /> */}
-
-                    <img src="/m1.png" alt="Picture of the map" className='w-full h-full'/>
+                    <GoogleMapReact
+                        defaultCenter={location.center}
+                        defaultZoom={location.zoom}
+                    >
+                        <Marker
+                            lat={30.1830}
+                            lng={78.6952}
+                        />
+                    </GoogleMapReact>
                 </div>
             </div>
         </div>
