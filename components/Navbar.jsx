@@ -13,7 +13,7 @@ const Navbar = () => {
                 }, 
                 {
                     title: 'Alumni Nearby',
-                    path: '/'
+                    path: '/nearby'
                 }
             ]} />
 
