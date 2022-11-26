@@ -27,3 +27,8 @@
 - portal settings
 - choose subAdmin
 - main admin - sub admin only approval
+
+
+
+
+- in future add libraries and integrations to make serch and animations more enhanced and flexible

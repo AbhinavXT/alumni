@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Notice from '../components/Notice'
 
 const noticeboard = () => {
   return (
@@ -70,7 +71,10 @@ const noticeboard = () => {
       
         <div className='flex flex-col my-6 gap-y-8'>
             <div className="px-64 py-2 rounded-sm text-xl bg-[#010673] text-gray-200 text-center"> + Start a discussion/Poll</div>
-            <div className="bg-gray-300 px-64 py-2 rounded-sm text-center">No discussion to display</div>
+            <div className="flex flex-col gap-y-4 py-2 rounded-sm">
+                <Notice />
+                <Notice />
+            </div>
         </div>
     </div>
   )
