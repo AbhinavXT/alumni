@@ -44,12 +44,6 @@ const directory = () => {
                         <SearchButton expanded={expand} text='Current Location' />
                     </button>
                     <button>
-                        <SearchButton expanded={expand} text='Current Location' />
-                    </button>
-                    <button>
-                        <SearchButton expanded={expand} text='Current Location' />
-                    </button>
-                    <button>
                         <SearchButton expanded={expand} text='Hometown' />
                     </button>
                     <button>

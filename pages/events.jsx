@@ -1,5 +1,4 @@
 import SiteButton from "../components/SiteButton"
-import SiteButtonDropDown from "../components/SiteButtonDropDown"
 
 const events = () => {
     return (
