@@ -1,8 +1,11 @@
+import { useState } from "react"
 import SiteButton from "../components/SiteButton"
 
 const events = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false)  
+
     return (
-        <div className="flex justify-center gap-x-12 -mt-20">
+        <div className="flex justify-center gap-x-12 my-12">
             <div className="flex flex-col gap-y-8 font-bold">
                 <div className='flex gap-x-2 items-center justify-center'>
                     <form action="submit">
@@ -19,8 +22,26 @@ const events = () => {
                     <SiteButton text='All Events' count='0' />
                     <SiteButton text='Past Events' count='0' />
                     <SiteButton text='Upcoming Events' count='0' />
-                    <SiteButton text='Categories' count='0' />
                     <SiteButton text='Attended by me' count='0' />
+                    
+
+                    <button className="relative" onClick={() =>
+                        dropdownOpen
+                            ? setDropdownOpen(false)
+                            : setDropdownOpen(true)
+                    }>
+                        <SiteButton text='Categories' count='2' />
+                    </button>
+                            
+                    <div className={`${dropdownOpen ? "hidden" : "flex flex-col gap-y-4"}`}>
+                        <a href='/events' className='bg-gray-200 px-4 text-gray-600'>
+                            <div>Alumni Stories</div>
+                        </a>
+                        
+                        <a href='/events' className='bg-gray-200 px-4 text-gray-600'>
+                            <div>Institute Updates</div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1">No more events to display!</div>

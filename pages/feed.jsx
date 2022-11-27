@@ -32,11 +32,11 @@ const feed = () => {
                     </button>
                             
                     <div className={`${dropdownOpen ? "hidden" : "absolute flex flex-col gap-y-4 mt-40"}`}>
-                        <a href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                        <a href='/feed' className='bg-gray-200 px-4 text-gray-600'>
                             <div>Alumni Stories</div>
                         </a>
                         
-                        <a href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                        <a href='/feed' className='bg-gray-200 px-4 text-gray-600'>
                             <div>Institute Updates</div>
                         </a>
                     </div>

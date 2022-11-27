@@ -32,3 +32,6 @@
 
 
 - in future add libraries and integrations to make serch and animations more enhanced and flexible
+
+
+hover:scale-105 ease-in duration-500

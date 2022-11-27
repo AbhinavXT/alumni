@@ -1,10 +1,16 @@
 import { useState } from "react"
 
 import Job from '../components/Job'
+import Internships from '../components/Internships'
 import SiteButton from "../components/SiteButton"
 
-const events = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false)    
+const careers = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false) 
+    const [component, setComponent] = useState(0)
+
+    const changeCompoenet = (comp) => {
+        setComponent(comp)
+    }   
 
     return (
         <div className="flex justify-center gap-x-12 mb-2 mt-6">
@@ -17,17 +23,21 @@ const events = () => {
                                 ? setDropdownOpen(false)
                                 : setDropdownOpen(true)
                         }>
-                            <SiteButton text='All Opportunities' count='0' />
+                            <SiteButton text='All Opportunities' count='3' />
                         </button>
                         
-                        <div className={`${dropdownOpen ? "flex flex-col gap-y-4" : "hidden"}`}>
-                            <a href='/careers' className='bg-gray-200 px-4 text-gray-600'>
-                                <div>Jobs</div>
-                            </a>
+                        <div className={`${dropdownOpen ? "hidden" : "flex flex-col gap-y-4 items-start"}`}>
+                            <button onClick={() => changeCompoenet(0)}>
+                                <div href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                                    <div>Jobs</div>
+                                </div>
+                            </button>
                             
-                            <a href='/careers' className='bg-gray-200 px-4 text-gray-600'>
-                                <div>Internships</div>
-                            </a>
+                            <button onClick={() => changeCompoenet(1)}>
+                                <div href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                                    <div>Internships</div>
+                                </div>
+                            </button>
                         </div>
                     </div>
 
@@ -37,9 +47,10 @@ const events = () => {
                 </div>
             </div>
 
-            <Job />
+            {component === 0 && <Job />}
+            {component === 1 && <Internships />}
         </div>
     )
 }
 
-export default events
+export default careers

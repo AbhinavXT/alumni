@@ -10,6 +10,7 @@ const Alumnus = () => {
       <Alumni />
       <Alumni />
       <Alumni />
+      <Alumni />
     </div>
   )
 }

@@ -72,8 +72,50 @@ const noticeboard = () => {
         <div className='flex flex-col my-6 gap-y-8'>
             <div className="px-64 py-2 rounded-sm text-xl bg-[#010673] text-gray-200 text-center"> + Start a discussion/Poll</div>
             <div className="flex flex-col gap-y-4 py-2 rounded-sm">
-                <Notice />
-                <Notice />
+                <Notice 
+                    owner = "Shivam Ramola"
+                    title = "Technical Consultant "
+                    company = "PwC India"
+                    location = "Pan India"
+                    deadline = "Nov 30, 2022"
+                    salary = "Negotiable"
+                    applications = "1"
+                    type = "Job"
+                    published = "Nov 20, 2022"
+                />
+                <Notice 
+                    owner = "Shekhar B"
+                    title = "Engineer"
+                    company = "Bechtel Corporation"
+                    location = "Gurgaon District"
+                    deadline = "Sep 22, 2022"
+                    salary = "Negotiable"
+                    applications = "2"
+                    type = "Job"
+                    published = "Sep 14, 2022"
+                />
+                <Notice 
+                    owner = "Prafull Pandey"
+                    title = "Web Developer"
+                    company = "MyRx Technologies"
+                    location = "Work From Home"
+                    deadline = "Jul 31, 2022"
+                    salary = "Based on talent"
+                    applications = "1"
+                    type = "Internship"
+                    published = "Jul 18, 2022"
+                />
+                <Notice 
+                    owner = "Mohit Aggrawal"
+                    title = "Software Architect"
+                    company = "HCL Technologies Limited"
+                    location = "Noida"
+                    deadline = "Jan 31, 2022"
+                    salary = "Negotiable"
+                    applications = "1"
+                    type = "Job"
+                    published = "Jan 10, 2022"
+                />
             </div>
         </div>
     </div>

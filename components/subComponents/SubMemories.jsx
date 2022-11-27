@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-const SubMemories = () => {
+const SubMemories = ({ date, title, text, views }) => {
   return (
     <div className="h-80 w-[379px] shadow-lg text-justify hover:scale-105 ease-in duration-500">
         <div className="flex flex-col justify-center items-center h-2/5">
             <Image
                 src="/i1.png"
-                alt="Picture of the college"
+                alt="Picture of the feed element"
                 width={379}
                 height={306}
             />
@@ -20,14 +20,14 @@ const SubMemories = () => {
                     </svg>
                 </div>
                 <div>
-                    Oct 08, 2020
+                    {date}
                 </div>
             </div>
             <div className='font-bold'>
-                A Request to joined Alumni Members in Portal
+                {title}
             </div>
             <div className='text-sm'>
-                Dear Alumni Members, It is observed that number of alumni registered in this alumni portal is constant now. we are around 3000 members of Alumni Association.
+                {text}
             </div>
             <div className='flex justify-between pt-2'>
                 <div className='text-xs flex gap-x-1'>
@@ -38,7 +38,7 @@ const SubMemories = () => {
                         </svg>
                     </div>
                     <div>
-                        189
+                        {views}
                     </div>
                 </div>
                 <a className='text-[#00004F] cursor-pointer'>View More</a>

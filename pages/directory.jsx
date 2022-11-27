@@ -16,7 +16,12 @@ const directory = () => {
                 <div className="text-lg">Filters</div>
                 <div className='flex gap-x-2 items-center justify-center'>
                     <form action="submit">
-                        <input className="bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter keyword..." />
+                        <input 
+                            className="bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                            id="filter" 
+                            type="text" 
+                            placeholder="Enter keyword..." 
+                        />
                     </form>
                     <button className="bg-[#F13617] p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -65,7 +70,7 @@ const directory = () => {
             </div>
 
             <div className="flex flex-col gap-y-8">
-                <div className="px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-left">3 Members in community</div>
+                <div className="px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-left">764 Members in community</div>
                 <Alumnus />
             </div>
         </div>
