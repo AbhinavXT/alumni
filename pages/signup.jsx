@@ -4,8 +4,20 @@ import axios from 'axios'
 const signup = () => {
     const linkedin = async() => {
         console.log('1')
-        const login = await axios.get('https://api.linkedin.com/v2/me')
-        console.log(login);
+        
+        try{
+
+            const login = await fetch(
+                "https://api.linkedin.com/v2/me",
+                {
+                    method: "GET"
+                }
+            )
+            
+            const response = await response.json()
+        } catch(err) {
+            console.log(err)
+        }
     }
 
     return (
