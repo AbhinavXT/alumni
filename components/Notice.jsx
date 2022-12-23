@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notice = (props) => {
   return (
-    <div className='flex flex-col divide-y gap-y-2 divide-gray-500 bg-gray-100 px-4 py-4 shadow-lg hover:scale-105 ease-in duration-500'>
+    <div className='flex flex-col divide-y gap-y-2 divide-gray-500 bg-gray-100 px-4 py-4 shadow-lg hover:scale-[1.02] ease-in duration-500'>
         <div>
             <span className='text-[#F13617] font-bold'>
                 {props.owner} {' '}
@@ -18,8 +18,8 @@ const Notice = (props) => {
                     </span>
                     | {props.company}
                 </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-share-fill" viewBox="0 0 16 16">
+                <div className='cursor-pointer'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00004F" className="bi bi-share-fill" viewBox="0 0 16 16">
                         <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
                     </svg>
                 </div>
