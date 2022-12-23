@@ -40,13 +40,13 @@ npm run dev
 
 ## Directory Information
 
-- `components` - The `components` folder in the `alumni` repository you provided contains JavaScript files that define components for the application.
+- `components` - The `components` folder in the `alumni` repository is where you provided contains JavaScript files that define components for the application.
 
-- `pages` - The `pages` folder in a Next.js project is where you define the routes for your application. Each file in the pages folder corresponds to a specific route, and the contents of that file will be rendered when a user navigates to that route.
+- `pages` - The `pages` folder in the `alumni` repository is where you define the routes for your application. Each file in the pages folder corresponds to a specific route, and the contents of that file will be rendered when a user navigates to that route.
 
-- `public` - The `public` folder in a Next.js project serves as a static directory that is available to the client-side. This means that any files placed in this folder can be accessed by the client-side code.
+- `public` - The `public` folder in the `alumni` repository serves as a static directory that is available to the client-side. This means that any files placed in this folder can be accessed by the client-side code.
 
-- `styles` - The `styles` folder in a Next.js project is where you can store your CSS files. Next.js automatically processes these files and applies them to your project.
+- `styles` - The `styles` folder in the `alumni` repository is where you can store your CSS files. Next.js automatically processes these files and applies them to your project.
 
 ## License
 The alumni repository is licensed under the MIT License. See the LICENSE file for more information.
