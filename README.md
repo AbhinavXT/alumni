@@ -48,6 +48,9 @@ npm run dev
 
 - `styles` - The `styles` folder in the `alumni` repository is where you can store your CSS files. Next.js automatically processes these files and applies them to your project.
 
+- `package.json` - `package.json` is a configuration file this project. It contains information about the project such as the name, version, dependencies, scripts, and other metadata. 
+
+
 ## License
 The alumni repository is licensed under the MIT License. See the LICENSE file for more information.
 
