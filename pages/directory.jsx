@@ -70,7 +70,7 @@ const directory = () => {
             </div>
 
             <div className="flex flex-col gap-y-8">
-                <div className="px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-left">764 Members in community</div>
+                <div className="px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-left">10 Members in community</div>
                 <Alumnus />
             </div>
         </div>
