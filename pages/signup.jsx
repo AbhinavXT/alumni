@@ -53,7 +53,7 @@ const signup = () => {
                         <button 
                             className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'
                         >
-                            <a href="https://google.com/login">
+                            <a href="https://accounts.google.com/v3/signin/">
                                 Connect with Gmail
                             </a>
                         </button>
