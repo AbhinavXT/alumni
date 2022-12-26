@@ -45,21 +45,24 @@ const signup = () => {
                     <div className='flex flex-col gap-y-4'>
                         <button 
                             className='text-center py-2 px-12 bg-[#365899] rounded text-gray-200'
-                            onClick={linkedin}
                         >
-                            Connect with LinkedIn
+                            <a href="https://www.linkedin.com/login">
+                                Connect with LinkedIn
+                            </a>
                         </button>
                         <button 
                             className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'
-                            onClick={linkedin}
                         >
-                            Connect with Gmail
+                            <a href="https://google.com/login">
+                                Connect with Gmail
+                            </a>
                         </button>
                         <button 
                             className='text-center py-2 px-12 bg-[#039BE5] rounded text-gray-200'
-                            onClick={linkedin}
                         >
-                            Connect with Twitter
+                            <a href="https://twitter.com/login">
+                                Connect with Twitter
+                            </a>
                         </button>
                     </div>
                     <div className='bg-gray-900 text-gray-200 rounded-full p-2'>OR</div>

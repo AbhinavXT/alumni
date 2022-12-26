@@ -35,3 +35,11 @@
 
 
 hover:scale-105 ease-in duration-500
+
+alumni office database
+
+master database - admin access only
+register databse
+greetings to all
+automatic generation of mails 
+birthday wishes, marriage anv email to all accn to DOB
