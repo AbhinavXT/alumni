@@ -46,21 +46,21 @@ const signup = () => {
                         <button 
                             className='text-center py-2 px-12 bg-[#365899] rounded text-gray-200'
                         >
-                            <a href="https://www.linkedin.com/login">
+                            <a href="https://www.linkedin.com/login" target="_blank">
                                 Connect with LinkedIn
                             </a>
                         </button>
                         <button 
                             className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'
                         >
-                            <a href="https://accounts.google.com/v3/signin/">
+                            <a href="https://accounts.google.com/v3/signin/" target="_blank">
                                 Connect with Gmail
                             </a>
                         </button>
                         <button 
                             className='text-center py-2 px-12 bg-[#039BE5] rounded text-gray-200'
                         >
-                            <a href="https://twitter.com/login">
+                            <a href="https://twitter.com/login" target="_blank">
                                 Connect with Twitter
                             </a>
                         </button>
