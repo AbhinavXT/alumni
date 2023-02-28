@@ -19,3 +19,78 @@
     @apply flex justify-center items-center px-8
 }
 
+/*Albums*/
+.albumsMain {
+    @apply flex flex-col py-8 justify-center items-center gap-y-8 bg-gray-300 w-screen px-40 text-center cursor-pointer
+}
+
+.albumsImageOuterDiv {
+    @apply h-80 w-96 shadow-lg hover:scale-105 ease-in duration-500
+}
+
+.albumsImageInnerDiv {
+    @apply flex flex-col justify-center items-center h-5/6
+}
+
+.albumsFouders {
+    @apply flex flex-col justify-center items-center bg-gray-200 h-1/6 w-full
+}
+
+/*Alumns Grid*/
+.alumnsGridMain {
+    @apply grid grid-cols-4 gap-x-6 gap-y-6
+}
+
+/*Branch*/
+.branchMain {
+    @apply flex flex-col items-center justify-center gap-y-2 py-8 px-16 shadow-lg rounded-md cursor-pointer bg-gray-100 hover:scale-105 ease-in duration-500
+}
+
+/*Contact*/
+/* .contactMain {
+    @apply flex flex-col py-8 items-center gap-y-8 w-screen px-40
+} */
+
+.contactHeadingText {
+    @apply text-3xl font-extrabold text-gray-200 bg-[#00004F] w-screen py-16 text-center
+}
+
+.contactInfoMain {
+    @apply flex gap-x-12 z-10 -mt-16
+}
+
+.contactInfoInnerDivOne {
+    @apply flex flex-col gap-y-6
+}
+
+.contactInfoInnerDivTwo {
+    @apply flex flex-col px-8 h-[408px] w-[397px] bg-gray-200 shadow-lg justify-center gap-y-3
+}
+
+.contactInfoInnerDivTwoText {
+    @apply text-gray-500 font-light
+}
+
+.contactInfoInnerDivThree {
+    @apply flex gap-x-2 text-gray-500 font-light items-center
+}
+
+.contactFormMain {
+    @apply flex flex-col px-8 h-[550px] w-[397px] bg-gray-200 shadow-lg divide-y-2 divide-gray-300
+}
+
+.contactFormText{
+    @apply flex items-center justify-center text-3xl font-light py-4
+}
+
+.contactFormInputHolder {
+    @apply flex flex-col gap-y-1
+}
+
+.contactFormInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+}
+
+.contactFormSubmit {
+    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+}

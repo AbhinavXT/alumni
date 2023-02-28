@@ -1,6 +1,42 @@
 import Notice from '../components/Notice'
 
 const Job = () => {
+    const notices = [
+        {
+            owner: "Shivam Ramola",
+            title: "Technical Consultant ",
+            company: "PwC India",
+            location: "Pan India",
+            deadline: "Nov 30, 2022",
+            salary: "Negotiable",
+            applications: "1",
+            type: "Job",
+            published: "Nov 20, 2022"
+        },
+        {
+            owner: "Shekhar B",
+            title: "Engineer",
+            company: "Bechtel Corporation",
+            location: "Gurgaon District",
+            deadline: "Sep 22, 2022",
+            salary: "Negotiable",
+            applications: "2",
+            type: "Job",
+            published: "Sep 14, 2022"
+        },
+        {
+            owner: "Mohit Aggrawal",
+            title: "Software Architect",
+            company: "HCL Technologies Limited",
+            location: "Noida",
+            deadline: "Jan 31, 2022",
+            salary: "Negotiable",
+            applications: "1",
+            type: "Job",
+            published: "Jan 10, 2022"
+        }
+    ]
+
     return (
         <div className="flex flex-col gap-y-8">
             <div className="flex flex-col px-8 py-4 rounded-sm text-lg bg-[#010673] text-gray-200 text-left gap-y-4">

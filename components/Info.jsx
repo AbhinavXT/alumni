@@ -1,5 +1,3 @@
-import SubInfo from './subComponents/SubInfo'
-
 const Info = () => {
     return (
         <div className="flex flex-col py-8 justify-center items-center gap-y-12 bg-gray-900 text-gray-200 w-screen px-60 text-center">
