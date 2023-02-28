@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-8 bg-gray-900 text-gray-200 py-12">
+    <div className="footerMain">
         <div className="flex gap-x-6">
             <a target='_blank' href="https://github.com/AbhinavXT/alumni">
                 <svg
@@ -49,12 +49,12 @@ const Footer = () => {
         </div>
         
         <div className="flex divide-x">
-            <a href="/" className="flex justify-center items-center px-8">HOME</a>
-            <a href="/aboutus" className="flex justify-center items-center px-8">ABOUT</a>
-            <a href="/" className="flex justify-center items-center px-8">CONTACT</a>
-            <a href="/" className="flex justify-center items-center px-8">SITEMAP</a>
-            <a href="/aboutus" className="flex justify-center items-center px-8">TERMS</a>
-            <a href="/aboutus" className="flex justify-center items-center px-8">PRIVACY</a>
+            <a href="/" className="footerLinks">HOME</a>
+            <a href="/aboutus" className="footerLinks">ABOUT</a>
+            <a href="/" className="footerLinks">CONTACT</a>
+            <a href="/" className="footerLinks">SITEMAP</a>
+            <a href="/aboutus" className="footerLinks">TERMS</a>
+            <a href="/aboutus" className="footerLinks">PRIVACY</a>
         </div>
     </div>
   )
