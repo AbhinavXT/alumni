@@ -1,80 +1,55 @@
 import Image from 'next/image'
 
 const team = () => {
+    const members = [
+        {
+            name: 'Dr. Sanjeev Naithani',
+            post: 'Treasurer',
+            image: '/t1.jpg'
+        },
+        {
+            name: 'Chandraveer Singh',
+            post: 'Secretary',
+            image: '/t2.jpg'
+        },
+        {
+            name: 'Dr. Yatindra Kumar',
+            post: 'Vice President',
+            image: '/t3.jpg'
+        },
+        {
+            name: 'Dr. Shashi Kant Verma',
+            post: 'President',
+            image: '/t4.jpg'
+        },
+        {
+            name: 'Prof. M.P.S. Chauhan',
+            post: 'Director & Patron',
+            image: '/t5.jpg'
+        }
+    ]
+
     return (
-        <div className='flex flex-col gap-y-16 -mt-60 mx-[400px]'>
+        <div className='teamMain'>
             <div className='text-3xl'>GBPIET Alumni Association Committee</div>
             <div className='flex gap-x-16'>
-                <div className='flex flex-col gap-y-4'>
-                    <Image
-                        src="/t1.jpg"
-                        alt="Picture of the college logo"
-                        width={120}
-                        height={150}
-                    />
+                {members.map((member, index) => {
+                    return (
+                        <div className='flex flex-col gap-y-4' key={index}>
+                            <Image
+                                src={member.image}
+                                alt="Picture of the college logo"
+                                width={120}
+                                height={150}
+                            />
             
-                    <div className='text-center'>
-                        <div className='font-bold text-lg'>Dr. Sanjeev Naithani</div>
-                        <div>Treasurer</div>
-                    </div>
-                </div>
-            
-                <div className='flex flex-col gap-y-4'>
-                    <Image
-                        src="/t2.jpg"
-                        alt="Picture of the college logo"
-                        width={120}
-                        height={150}
-                    />
-
-                    <div className='text-center'>
-                        <div className='font-bold text-lg'>Chandraveer Singh</div>
-                        <div>Secretary</div>
-                    </div>
-                </div>
-            
-                <div className='flex flex-col gap-y-4'>
-                    <Image
-                        src="/t3.jpg"
-                        alt="Picture of the college logo"
-                        width={120}
-                        height={150}
-                    />
-
-                    <div className='text-center'>
-                        <div className='font-bold text-lg'>Dr. Yatindra Kumar</div>
-                        <div>Vice President</div>
-                    </div>
-                </div>
-            
-                <div className='flex flex-col gap-y-4'>
-                    <Image
-                        src="/t4.jpg"
-                        alt="Picture of the college logo"
-                        width={120}
-                        height={150}
-                    />
-                    <div className='text-center'>
-                        <div className='font-bold text-lg'>Dr. Shashi Kant Verma</div>
-                        <div>President</div>
-                    </div>
-                </div>
-                
-                <div className='flex flex-col gap-y-4'>
-
-                    <Image
-                        src="/t5.jpg"
-                        alt="Picture of the college logo"
-                        width={120}
-                        height={150}
-                    />
-                
-                    <div className='text-center'>
-                        <div className='font-bold text-lg'>Prof. M.P.S. Chauhan</div>
-                        <div>Director & Patron</div>
-                    </div>
-                
-                </div>
+                            <div className='text-center'>
+                                <div className='font-bold text-lg'>{member.name}</div>
+                                <div>{member.post}</div>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

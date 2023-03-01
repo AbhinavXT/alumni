@@ -333,3 +333,141 @@
 .siteButtonDropdownMenuTitle {
     @apply text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2
 }
+
+
+/*aboutus*/
+.aboutusMain {
+    @apply flex flex-col mx-96 -mt-96
+}
+
+.aboutusMainDiv {
+    @apply font-bold text-3xl py-12
+}
+
+.aboutusMainDivText {
+    @apply flex flex-col gap-y-4
+}
+
+/**Events*/
+.eventsMain {
+    @apply flex justify-center gap-x-12 mt-12 mb-32
+}
+
+.eventsList {
+    @apply flex flex-col gap-y-8 font-bold
+}
+
+.eventListSearch {
+    @apply flex gap-x-2 items-center justify-center
+}
+
+.eventListSearchInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none
+}
+
+.eventListSearchButton {
+    @apply bg-[#F13617] p-4
+}
+
+.eventListHeading {
+    @apply text-2xl font-light
+}
+
+.eventListContent {
+    @apply flex flex-col gap-y-4
+}
+
+.eventListCategoryDorpdown {
+    @apply bg-gray-200 px-4 text-gray-600
+}
+
+.events {
+    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+}
+
+
+/*invite*/
+.inviteMain {
+    @apply flex flex-col items-center justify-center gap-y-8 divide-y divide-gray-900 bg-gray-100 mx-auto my-6 px-20 py-12 rounded-md
+}
+
+.inviteImageDiv {
+    @apply flex flex-col gap-y-4 text-center
+}
+
+.inviteButtons {
+    @apply flex items-center justify-center text-lg gap-x-2 text-center py-2 px-12 rounded-md
+}
+
+.inviteFormMain {
+    @apply flex flex-col gap-y-4 items-center justify-center text-center pt-6
+}
+
+.inviteFormInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+}
+
+.inviteFormButton {
+    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+}
+
+
+/*SignUp*/
+.signUpMain {
+    @apply flex flex-col justify-center -mt-12 gap-y-20 mb-24
+}
+
+.signUpHeader {
+    @apply bg-gray-900 text-gray-200 text-3xl font-semibold py-20 pl-32
+}
+
+.signUpImageOuterDiv {
+    @apply flex mt-16 justify-center bg-gray-100 py-12 mx-auto divide-x divide-gray-400 rounded shadow-lg
+}
+
+.signUpImageInnerDiv {
+    @apply flex flex-col items-center justify-center gap-y-8 px-12 text-center
+}
+
+.signUpButtonOuterDiv {
+    @apply flex flex-col items-center justify-center gap-y-8 px-12
+}
+
+.signUpButtonInnerDiv {
+    @apply flex flex-col gap-y-4
+}
+
+.signUpButton {
+    @apply text-center py-2 px-12 rounded text-gray-200
+}
+
+.signUpFormMain {
+    @apply flex gap-x-4 items-center justify-center
+}
+
+.signUpFormInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+}
+
+/*Team*/
+.teamMain {
+    @apply flex flex-col gap-y-16 -mt-60 mx-[400px]
+}
+
+
+/*Yearbook*/
+.yearbookMain {
+    @apply flex flex-col gap-y-16 py-20
+}
+
+.yearbookHeader{
+    @apply flex justify-between items-center px-[300px]
+}
+
+.yearbookBatchmate {
+    @apply text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300
+}
+
+.yearbookGrid {
+    @apply grid grid-cols-4 gap-x-8 gap-y-6 px-[400px]
+}

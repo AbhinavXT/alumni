@@ -40,12 +40,12 @@ const yearbook = () => {
     ]
   
     return (
-        <div className='flex flex-col gap-y-16 py-20'>
-            <div className='flex justify-between items-center px-[300px]'>
+        <div className='yearbookMain'>
+            <div className='yearbookHeader'>
                 <div className='text-xl font-bold'>Select Year</div>
-                <button className='text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300'>View My Batchmates</button>
+                <button className='yearbookBatchmate'>View My Batchmates</button>
             </div>
-            <div className='grid grid-cols-4 gap-x-8 gap-y-6 px-[400px]'>
+            <div className='yearbookGrid'>
                 {years.map((year, i) => {
                     return (
                         <Year batch = {year.batch} memberNum = {year.memberNum} key = {i}/>

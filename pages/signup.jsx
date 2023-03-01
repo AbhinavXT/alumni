@@ -21,11 +21,11 @@ const signup = () => {
     }
 
     return (
-        <div className='flex flex-col justify-center -mt-12 gp-y-20 mb-24'>
-            <div className='bg-gray-900 text-gray-200 text-3xl font-semibold py-20 pl-32'>Signup / Login</div>
+        <div className='signUpMain'>
+            <div className='signUpHeader'>Signup / Login</div>
 
-            <div className='flex mt-16 justify-center bg-gray-100 py-12 mx-auto divide-x divide-gray-400 rounded shadow-lg'>
-                <div className='flex flex-col items-center justify-center gap-y-8 px-12 text-center'>
+            <div className='signUpImageOuterDiv'>
+                <div className='signUpImageInnerDiv'>
                     <div>
                         <Image
                             src="/gbpec.jpg"
@@ -40,25 +40,25 @@ const signup = () => {
                     <div className='font-light'>Sign up or log in to stay <div>connected with your community</div></div>
                 </div>
 
-                <div className='flex flex-col items-center justify-center gap-y-8 px-12'>
+                <div className='signUpButtonOuterDiv'>
                     <div className='text-lg font-light'>Choose any one of the following to Signup/Login</div>
-                    <div className='flex flex-col gap-y-4'>
+                    <div className='signUpButtonInnerDiv'>
                         <button 
-                            className='text-center py-2 px-12 bg-[#365899] rounded text-gray-200'
+                            className='signUpButton bg-[#365899]'
                         >
                             <a href="https://www.linkedin.com/login" target="_blank">
                                 Connect with LinkedIn
                             </a>
                         </button>
                         <button 
-                            className='text-center py-2 px-12 bg-[#E53935] rounded text-gray-200'
+                            className='signUpButton bg-[#E53935]'
                         >
                             <a href="https://accounts.google.com/v3/signin/" target="_blank">
                                 Connect with Gmail
                             </a>
                         </button>
                         <button 
-                            className='text-center py-2 px-12 bg-[#039BE5] rounded text-gray-200'
+                            className='signUpButton bg-[#039BE5]'
                         >
                             <a href="https://twitter.com/login" target="_blank">
                                 Connect with Twitter
@@ -67,9 +67,9 @@ const signup = () => {
                     </div>
                     <div className='bg-gray-900 text-gray-200 rounded-full p-2'>OR</div>
 
-                    <div className='flex gap-x-4 items-center justify-center'>
+                    <div className='signUpFormMain'>
                         <form action="submit">
-                            <input className="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your email" />
+                            <input className="signUpFormInput" id="username" type="text" placeholder="Enter your email" />
                         </form>
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
