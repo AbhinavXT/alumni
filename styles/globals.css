@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Layout*/
+.layoutMain {
+    @apply flex min-h-screen flex-col justify-between bg-[#e5e5e5]
+}
+
+
+/*Navbar*/
+.navbarMain {
+    @apply flex justify-center items-center gap-x-20 py-2 bg-[#F13617] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold
+}
+
 /*Header*/
 .headerMain {
     @apply flex bg-[#00004F] justify-center items-center gap-x-96 text-gray-200 pt-4 pb-8
@@ -10,6 +21,8 @@
 .headerLinks {
     @apply flex items-center justify-center bg-[#20205F] px-4 py-2 rounded-lg shadow-lg hover:shadow-[#363691] ease-in duration-500
 }
+
+
 /*Footer*/
 .footerMain {
     @apply flex flex-col items-center justify-center gap-y-8 bg-gray-900 text-gray-200 py-12
@@ -18,6 +31,7 @@
 .footerLinks {
     @apply flex justify-center items-center px-8
 }
+
 
 /*Albums*/
 .albumsMain {
@@ -36,21 +50,20 @@
     @apply flex flex-col justify-center items-center bg-gray-200 h-1/6 w-full
 }
 
+
 /*Alumns Grid*/
 .alumnsGridMain {
     @apply grid grid-cols-4 gap-x-6 gap-y-6
 }
+
 
 /*Branch*/
 .branchMain {
     @apply flex flex-col items-center justify-center gap-y-2 py-8 px-16 shadow-lg rounded-md cursor-pointer bg-gray-100 hover:scale-105 ease-in duration-500
 }
 
-/*Contact*/
-/* .contactMain {
-    @apply flex flex-col py-8 items-center gap-y-8 w-screen px-40
-} */
 
+/*Contact*/
 .contactHeadingText {
     @apply text-3xl font-extrabold text-gray-200 bg-[#00004F] w-screen py-16 text-center
 }
@@ -93,4 +106,230 @@
 
 .contactFormSubmit {
     @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+}
+
+
+/*Job, Intrnship*/
+.jobMain {
+    @apply flex flex-col gap-y-8
+}
+
+.jobListHeader {
+    @apply flex flex-col px-8 py-4 rounded-sm text-lg bg-[#010673] text-gray-200 text-left gap-y-4
+}
+
+.jobAddButton {
+    @apply bg-gray-200 text-black py-1 mx-auto px-12 rounded-md
+}
+
+.jobPrefrenceMain {
+    @apply bg-gray-100 px-12 divide-y-2 divide-gray-900
+}
+
+.jobPrefrenceHeader {
+    @apply flex gap-x-4 items-center py-4
+}
+
+.jobPrefrenceTextOuterDiv {
+    @apply flex flex-col gap-y-6 p-6
+}
+
+.jobPrefrenceTextInnerDivOne {
+    @apply flex justify-between
+}
+
+.jobPrefrenceTextInnerDivTwo {
+    @apply flex flex-col gap-y-4
+}
+
+.jobPrefrenceSaveButtonDiv {
+    @apply flex justify-end
+}
+
+.jobPrefrenceSaveButtonButton {
+    @apply bg-[#010673] text-gray-200 px-6 py-2 rounded
+}
+
+.jobNoticeMain {
+    @apply flex flex-col gap-y-4 py-2 rounded-sm
+}
+
+
+/*NotableAlumni*/
+.notableAlumniMain {
+    @apply flex flex-col py-12 justify-center items-center gap-y-8
+}
+
+.notableAlumniText {
+    @apply text-3xl font-extrabold
+}
+
+.notableAlumniImageOuterDiv {
+    @apply h-80 w-[379px] bg-[#00004F] shadow-lg hover:scale-105 ease-in duration-500
+}
+
+.notableAlumniImageInnerDiv {
+    @apply flex flex-col justify-center items-center h-1/2
+}
+
+.notableAlumniImageInnerDivText {
+    @apply flex flex-col justify-center items-center bg-gray-200 h-1/2 w-full
+}
+
+
+/*Memories*/
+.memoriesMain {
+    @apply flex flex-col py-8 justify-center gap-y-8 w-screen px-80 text-center
+}
+
+.memoriesHeaderTextOuterDiv {
+    @apply flex justify-between
+}
+
+.memoriesHeaderTextInnerDivOne {
+    @apply text-3xl font-extrabold
+}
+
+.memoriesHeaderTextInnerDivTwo {
+    @apply px-6 py-1 border border-[#00004F]
+}
+
+.memoriesGrid {
+    @apply flex gap-x-20 items-center justify-center
+}
+
+
+/*FeedElement*/
+.feedElementMain {
+    @apply flex flex-col gap-y-6 px-6 py-4 bg-gray-100 shadow-lg
+}
+
+.feedElementDataOuterDiv {
+    @apply flex justify-between items-center
+}
+
+.feedElementDataInnerDivOne {
+    @apply flex gap-x-4 items-center
+}
+
+.feedElementTitle {
+    @apply font-bold text-[#00004F]
+}
+
+
+/*Info*/
+.infoMain {
+    @apply flex flex-col py-8 justify-center items-center gap-y-12 bg-gray-900 text-gray-200 w-screen px-60 text-center
+}
+
+.infoHeader {
+    @apply text-2xl font-bold
+}
+
+.infoOuterDiv {
+    @apply flex justify-center items-center gap-x-12
+}
+
+.infoInnerDiv {
+    @apply flex flex-col items-center justify-center gap-y-6
+}
+
+
+/*Year*/
+.yearMain {
+    @apply flex flex-col items-center justify-center gap-y-2 py-8 px-12 shadow-lg rounded-md cursor-pointer bg-gray-100 hover:scale-105 ease-in duration-500
+}
+
+
+/*Submissions*/
+.submissionsMain {
+    @apply flex px-72 py-10 gap-x-32
+}
+
+.submissionsInnerDiv {
+    @apply flex flex-col gap-y-6
+}
+
+.submissionsInnerDivText {
+    @apply flex flex-col gap-y-4
+}
+
+
+/*Notice*/
+.noticeMain {
+    @apply flex flex-col divide-y gap-y-2 divide-gray-500 bg-gray-100 px-4 py-4 shadow-lg hover:scale-[1.02] ease-in duration-500
+}
+
+.noticeOwner {
+    @apply text-[#F13617] font-bold
+}
+
+.noticeTitle {
+    @apply flex flex-col gap-y-2
+}
+
+.noticeTitleDiv {
+    @apply flex justify-between py-4
+}
+
+.noticeTitleSpan {
+    @apply font-bold text-lg
+}
+
+.noticeDetails {
+    @apply flex justify-between items-center gap-x-6
+}
+
+.noticeDetailsLabel {
+    @apply font-bold text-gray-600
+}
+
+.noticeDetailsText {
+    @apply font-light text-sm
+}
+
+.noticeType {
+    @apply px-4 py-1 bg-blue-100 text-sm w-fit rounded-full my-2
+}
+
+.noticeFooter {
+    @apply flex justify-between items-center
+}
+
+.noticeFooterInnerDiv {
+    @apply flex gap-x-2 items-center
+}
+
+.noticeViewButton {
+    @apply px-2 py-1 border-2 border-[#00004F]
+}
+
+.noticeApplyButton {
+    @apply px-4 py-1 bg-[#00004F] text-gray-200
+}
+
+
+/*SiteBUtton, SiteButtonDropdown*/
+.siteButtonMain {
+    @apply flex justify-between py-4 px-8 bg-gray-300 text-lg rounded-sm cursor-pointer
+}
+
+.siteButtonText {
+    @apply font-bold text-left pr-36
+}
+
+.siteButtonDropdownCount {
+    @apply font-light text-right
+}
+
+.siteButtonDropdownMainMenu {
+    @apply bg-gray-100 text-base z-20 absolute list-none rounded-sm shadow my-2 -mx-32 w-60 
+}
+
+.siteButtonDropdownList{
+    @apply text-center py-1 divide-y-2
+}
+
+.siteButtonDropdownMenuTitle {
+    @apply text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2
 }

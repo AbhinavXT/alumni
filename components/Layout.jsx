@@ -3,7 +3,7 @@ import Header from './Header'
 
 const Layout = ({ children }) => {
     return (
-        <div className="flex min-h-screen flex-col justify-between bg-[#e5e5e5]">
+        <div className="layoutMain">
             <Header />
             {children}
             <Footer />

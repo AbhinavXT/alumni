@@ -3,8 +3,8 @@ import NavButton from './subComponents/NavButton'
 
 const Navbar = () => {
     return (
-        <div className="flex justify-center items-center gap-x-20 py-2 bg-[#F13617] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold">
-            <NavButton title='CAMPUSFEED' path='/feed' />
+        <div className="navbarMain">
+            <NavButton title='CAMPUSFEED' path='/feed'/>
 
             <NavButtonDropDown title='FIND ALUMNI' dropList={[
                 {
@@ -15,9 +15,9 @@ const Navbar = () => {
                     title: 'Alumni Nearby',
                     path: '/nearby'
                 }
-            ]} />
+            ]}/>
 
-            <NavButton title='NOTICEBOARD' path='/noticeboard' />
+            <NavButton title='NOTICEBOARD' path='/noticeboard'/>
 
             <NavButtonDropDown title='EVENTS' dropList={[
                 {
@@ -28,7 +28,7 @@ const Navbar = () => {
                     title:'Galleries',
                     path: '/galleries'
                 }
-            ]} />
+            ]}/>
 
             <NavButtonDropDown title='BATCHMATES' dropList={[
                 {
@@ -39,7 +39,7 @@ const Navbar = () => {
                     title:'Invite Batchmates',
                     path: '/invite'
                 }
-            ]} />
+            ]}/>
 
             <NavButtonDropDown title='CAREERS' dropList={[
                 {
@@ -61,7 +61,7 @@ const Navbar = () => {
                     title: 'About Us',
                     path: '/aboutus'
                 }
-            ]} />
+            ]}/>
         </div>
     )
 }

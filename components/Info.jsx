@@ -1,12 +1,12 @@
 const Info = () => {
     return (
-        <div className="flex flex-col py-8 justify-center items-center gap-y-12 bg-gray-900 text-gray-200 w-screen px-60 text-center">
-            <div className="text-2xl font-bold">
+        <div className="infoMain">
+            <div className="infoHeader">
                 GBPEC ALUMNI ASSOCIATION PLATFORM
             </div>
 
-            <div className='flex justify-center items-center gap-x-12'>
-                <div className='flex flex-col items-center justify-center gap-y-6'>
+            <div className='infoOuterDiv'>
+                <div className='infoInnerDiv'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -18,7 +18,7 @@ const Info = () => {
                     <div className='text-sm'>Create & Complete your Alumni Profile & remain connected with with all opportunities matching your interest</div>
                 </div>
 
-                <div className='flex flex-col items-center justify-center gap-y-6'>
+                <div className='infoInnerDiv'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z"/>
@@ -30,7 +30,7 @@ const Info = () => {
                     <div className='text-sm'>View Our Exclusive Batchmates Directory to know about whereabouts of your batchmates</div>
                 </div>
 
-                <div className='flex flex-col items-center justify-center gap-y-6'>
+                <div className='infoInnerDiv'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -41,7 +41,7 @@ const Info = () => {
                     <div className='text-sm'>Find Aumni living in your city & be a part of meetups in your cities</div>
                 </div>
 
-                <div className='flex flex-col items-center justify-center gap-y-6'>
+                <div className='infoInnerDiv'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>

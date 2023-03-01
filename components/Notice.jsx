@@ -2,18 +2,18 @@ import React from 'react'
 
 const Notice = (props) => {
   return (
-    <div className='flex flex-col divide-y gap-y-2 divide-gray-500 bg-gray-100 px-4 py-4 shadow-lg hover:scale-[1.02] ease-in duration-500'>
+    <div className='noticeMain'>
         <div>
-            <span className='text-[#F13617] font-bold'>
+            <span className='noticeOwner'>
                 {props.owner} {' '}
             </span>
             posted an opportunity
         </div>
         
-        <div className='flex flex-col gap-y-2'>
-            <div className='flex justify-between py-4'>
+        <div className='noticeTitle'>
+            <div className='noticeTitleDiv'>
                 <div className='font-light'>
-                    <span className='font-bold text-lg'>
+                    <span className='noticeTitleSpan'>
                         {props.title} {' '}
                     </span>
                     | {props.company}
@@ -25,29 +25,29 @@ const Notice = (props) => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center gap-x-6'>
+            <div className='noticeDetails'>
                 <div>
-                    <div className='font-bold text-gray-600'>Location</div>
-                    <div className='font-light text-sm'>{props.location}</div>
+                    <div className='noticeDetailsLabel'>Location</div>
+                    <div className='noticeDetailsText'>{props.location}</div>
                 </div>
                 <div>
-                    <div className='font-bold text-gray-600'>Deadline</div>
-                    <div className='font-light text-sm'>Apply by: {props.deadline}</div>
+                    <div className='noticeDetailsLabel'>Deadline</div>
+                    <div className='noticeDetailsText'>Apply by: {props.deadline}</div>
                 </div>
                 <div>
-                    <div className='font-bold text-gray-600'>Salary</div>
-                    <div className='font-light text-sm'>{props.salary}</div>
+                    <div className='noticeDetailsLabel'>Salary</div>
+                    <div className='noticeDetailsText'>{props.salary}</div>
                 </div>
                 <div>
-                    <div className='font-bold text-gray-600'>Applications</div>
-                    <div className='font-light text-sm'>{props.applications} applied</div>
+                    <div className='noticeDetailsLabel'>Applications</div>
+                    <div className='noticeDetailsText'>{props.applications} applied</div>
                 </div>
             </div>
             
-            <div className='px-4 py-1 bg-blue-100 text-sm w-fit rounded-full my-2'>{props.type}</div>
+            <div className='noticeType'>{props.type}</div>
             
-            <div className='flex justify-between items-center'>
-                <div className='flex items-center gap-x-2'>
+            <div className='noticeFooter'>
+                <div className='noticeFooterInnerDiv'>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -55,14 +55,14 @@ const Notice = (props) => {
                         </svg>
                     </div>
                     <div className='text-sm'>
-                        <div className='font-bold'>Shivam Ramola</div>
+                        <div className='font-bold'>{props.owner}</div>
                         <div className='font-light'>Published On {props.published}</div>
                     </div>
                 </div>
 
                 <div className='flex gap-x-4'>
-                    <button className='px-2 py-1 border-2 border-[#00004F]'>View Job Post</button>
-                    <button className='px-4 py-1 bg-[#00004F] text-gray-200'>Apply</button>
+                    <button className='noticeViewButton'>View Job Post</button>
+                    <button className='noticeApplyButton'>Apply</button>
                 </div>
             </div>
         </div>

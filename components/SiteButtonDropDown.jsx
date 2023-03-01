@@ -6,24 +6,24 @@ const SiteButtonDropDown = ({ text, count, dropList }) => {
 
     return (
         <div>
-            <div className='flex justify-between py-4 px-8 bg-gray-300 text-lg rounded-sm cursor-pointer'
+            <div className='siteButtonMain'
                 onClick={() =>
                     dropdownOpen
                         ? setDropdownOpen(false)
                         : setDropdownOpen(true)
                     }
             >
-                <div className='font-bold text-left pr-36'>{text}</div>
+                <div className='siteButtonText'>{text}</div>
                 <div className='font-light text-right'>{count}</div>
                   
             </div>
                   
-            <div className={`bg-gray-100 text-base z-20 absolute list-none rounded-sm shadow my-2 -mx-32 w-60 ${dropdownOpen ? "block" : "hidden"}`}>
-                <ul className="text-center py-1 divide-y-2" >
+            <div className={`siteButtonDropdownMenu ${dropdownOpen ? "block" : "hidden"}`}>
+                <ul className="siteButtonDropdownList" >
                     {dropList.map((item, i) =>   (
                         <Link key={i} href={item.path}>
                             <li onClick={() => setDropdownOpen(false)}>
-                                <a href="#" className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">{item.title}</a>
+                                <a href="#" className="siteButtonDropdownMenuTitle">{item.title}</a>
                             </li>
                         </Link>
                     ))}
