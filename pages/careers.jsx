@@ -13,11 +13,11 @@ const careers = () => {
     }   
 
     return (
-        <div className="flex justify-center gap-x-12 mb-2 mt-6">
-            <div className="flex flex-col gap-y-8 font-bold">
-                <div className="text-2xl font-light">JOB CATEGORIES</div>
-                <div className="flex flex-col gap-y-4">
-                    <div className="flex flex-col gap-y-4">
+        <div className="careersMain">
+            <div className="careersOuterDiv">
+                <div className="careerHeader">JOB CATEGORIES</div>
+                <div className="careersInnerDivs">
+                    <div className="careersInnerDivs">
                         <button onClick={() =>
                             dropdownOpen
                                 ? setDropdownOpen(false)
@@ -26,15 +26,15 @@ const careers = () => {
                             <SiteButton text='All Opportunities' count='3' />
                         </button>
                         
-                        <div className={`${dropdownOpen ? "hidden" : "flex flex-col gap-y-4 items-start"}`}>
+                        <div className={`${dropdownOpen ? "hidden" : "careersDropdown"}`}>
                             <button onClick={() => changeCompoenet(0)}>
-                                <div href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                                <div href='/careers' className='careersDropdownMenu'>
                                     <div>Jobs</div>
                                 </div>
                             </button>
                             
                             <button onClick={() => changeCompoenet(1)}>
-                                <div href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                                <div href='/careers' className='careersDropdownMenu'>
                                     <div>Internships</div>
                                 </div>
                             </button>

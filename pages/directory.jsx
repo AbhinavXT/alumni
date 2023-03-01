@@ -11,13 +11,13 @@ const directory = () => {
     }
 
     return (
-        <div className="flex justify-center gap-x-12 my-16">
-            <div className="flex flex-col gap-y-12 font-bold">
+        <div className="directoryMain">
+            <div className="directoryOuterDiv">
                 <div className="text-lg">Filters</div>
-                <div className='flex gap-x-2 items-center justify-center'>
+                <div className='directoryFormOuterDiv'>
                     <form action="submit">
                         <input 
-                            className="bg-gray-100 shadow appearance-none border rounded w-72 py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                            className="directoryFormInput" 
                             id="filter" 
                             type="text" 
                             placeholder="Enter keyword..." 
@@ -70,7 +70,7 @@ const directory = () => {
             </div>
 
             <div className="flex flex-col gap-y-8">
-                <div className="px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-center">10 Members in community</div>
+                <div className="directoryAlumnsGrid">10 Members in community</div>
                 <Alumnus />
             </div>
         </div>

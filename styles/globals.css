@@ -471,3 +471,81 @@
 .yearbookGrid {
     @apply grid grid-cols-4 gap-x-8 gap-y-6 px-[400px]
 }
+
+
+/*Careers*/
+.careersMain {
+    @apply flex justify-center gap-x-12 mb-2 mt-6
+}
+
+.careersOuterDiv {
+    @apply flex flex-col gap-y-8 font-bold
+}
+
+.careerHeader {
+    @apply text-2xl font-light
+}
+
+.careersInnerDivs {
+    @apply flex flex-col gap-y-4
+}
+
+.careersDropdown {
+    @apply flex flex-col gap-y-4 items-start
+}
+
+.careersDropdownMenu {
+    @apply bg-gray-200 px-6 text-gray-600
+}
+
+
+/*Directory*/
+.directoryMain {
+    @apply flex justify-center gap-x-12 my-16
+}
+
+.directoryOuterDiv {
+    @apply flex flex-col gap-y-12 font-bold
+}
+
+.directoryFormOuterDiv {
+    @apply flex gap-x-2 items-center justify-center
+}
+
+.directoryFormInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none
+}
+
+.directoryAlumnsGrid {
+    @apply px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-center
+}
+
+
+/*Galleries*/
+.galleriesMain {
+    @apply flex justify-center gap-x-12 -mt-48
+}
+
+.galleriesOuterDiv {
+    @apply flex flex-col gap-y-12 font-bold
+}
+
+.galleriesDropdown {
+    @apply absolute flex flex-col gap-y-4 mt-60
+}
+
+.galleriesDropdownMenu {
+    @apply bg-gray-200 px-4 text-gray-600
+}
+
+.gallarierNumber {
+    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+}
+
+.galleriesImageOuterDiv {
+    @apply flex flex-col gap-y-2 w-72
+}
+
+.galleriesImageText {
+    @apply flex justify-between items-center
+}

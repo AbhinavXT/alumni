@@ -8,8 +8,8 @@ const galleries = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false)    
 
     return (
-        <div className="flex justify-center gap-x-12 -mt-48">
-            <div className="flex flex-col gap-y-12 font-bold">
+        <div className="galleriesMain">
+            <div className="galleriesOuterDiv">
                 <div className="text-2xl font-light">GALLERY CATEGORIES</div>
                 <div className="flex flex-col gap-y-4">
                     <SiteButton text='All ' count='1' />
@@ -23,11 +23,11 @@ const galleries = () => {
                         <SiteButton text='Categories' count='0' />
                     </button>
 
-                    <div className={`${dropdownOpen ? "hidden" : "absolute flex flex-col gap-y-4 mt-60"}`}>
-                        <a href='/galleries' className='bg-gray-200 px-4 text-gray-600'>
+                    <div className={`${dropdownOpen ? "hidden" : "galleriesDropdown"}`}>
+                        <a href='/galleries' className='galleriesDropdownMenu'>
                             <div>Alumni Stories</div>
                         </a>
-                        <a href='/careers' className='bg-gray-200 px-4 text-gray-600'>
+                        <a href='/careers' className='galleriesDropdownMenu'>
                             <div>Institute Updates</div>
                         </a>
                     </div>
@@ -35,9 +35,9 @@ const galleries = () => {
             </div>
             
             <div className="flex flex-col gap-y-8">
-                <div className="flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1">1 gallay to display!</div>
+                <div className="gallarierNumber">1 gallay to display!</div>
                 
-                <div className="flex flex-col gap-y-2 w-72">
+                <div className="galleriesImageOuterDiv">
                     <Link href='/gallary'>
                         <Image
                             src="/i2.webp"
@@ -48,7 +48,7 @@ const galleries = () => {
                         />
                     </Link>
 
-                    <div className="flex justify-between items-center">
+                    <div className="galleriesImageText">
                         <div className="font-bold">An Old Memories</div>
                         <div>6 Items</div>
                     </div>
