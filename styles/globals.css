@@ -549,3 +549,100 @@
 .galleriesImageText {
     @apply flex justify-between items-center
 }
+
+/*noticeboard*/
+.noticeboardMain {
+    @apply flex justify-center gap-x-12
+}
+
+.noticeboardOuterDiv {
+    @apply flex flex-col items-center justify-center gap-y-8 divide-y divide-gray-900 bg-gray-100 mx-auto my-6 px-8 py-8 rounded-md
+}
+
+.noticeboardImageDiv {
+    @apply flex flex-col gap-y-4 text-center
+}
+
+.noticeboardButtons {
+    @apply flex flex-col gap-y-4 py-6
+}
+
+.noticeboardButtonsInner {
+    @apply flex items-center justify-center text-lg gap-x-2 text-center py-2 px-12 rounded-md text-gray-200
+}
+
+.noticeboardOr {
+    @apply bg-gray-900 text-gray-200 rounded-full p-2
+}
+
+.noticeboardFormMain {
+    @apply flex flex-col gap-y-4 items-center justify-center text-center pt-6
+}
+
+.noticeboardFormInput {
+    @apply bg-gray-100 shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+}
+
+.noticeboardFormButton {
+    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+}
+
+.noticeboardGridMain {
+    @apply flex flex-col my-6 gap-y-8
+}
+
+.noticeboardGridHeader {
+    @apply px-64 py-2 rounded-sm text-xl bg-[#010673] text-gray-200 text-center
+}
+
+.noticeboardGridDiv {
+    @apply flex flex-col gap-y-4 py-2 rounded-sm
+}
+
+
+/*Alumni*/
+.alumniMain {
+    @apply flex flex-col gap-y-2 bg-slate-200 border border-gray-300 shadow-lg
+}
+
+.alumniImage {
+    @apply flex justify-center items-center bg-gray-300 h-40 w-full
+}
+
+.alumniContent {
+    @apply flex flex-col px-2 pb-2 font-light text-xs
+}
+
+.alumniName {
+    @apply font-bold text-base pb-2
+}
+
+.alumniButton {
+    @apply flex justify-center items-center gap-x-2 pb-2 text-sm
+}
+
+
+/*NavbarDropDownButton*/
+.navbarDropDownButton {
+    @apply bg-gray-100 text-base z-20 absolute list-none rounded-sm shadow my-2 -mx-32 w-60
+}
+
+.navbarTitle {
+    @apply text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2
+}
+
+
+/*SubInfo*/
+.subInfoMain {
+    @apply flex flex-col items-center justify-center gap-y-6
+}
+
+
+/*SubMemoriesMain*/
+.subMemoriesMain {
+    @apply h-80 w-[379px] shadow-lg text-justify hover:scale-105 ease-in duration-500
+}
+
+.subMemoriesImage {
+    @apply flex flex-col justify-center items-center h-2/5
+}

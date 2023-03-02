@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 const SubMemories = ({ date, title, text, views }) => {
   return (
-    <div className="h-80 w-[379px] shadow-lg text-justify hover:scale-105 ease-in duration-500">
-        <div className="flex flex-col justify-center items-center h-2/5">
+    <div className="subMemoriesMain">
+        <div className="subMemoriesImage">
             <Image
                 src="/i1.png"
                 alt="Picture of the feed element"
