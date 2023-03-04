@@ -7,17 +7,35 @@ import FeedElement from "../components/FeedElement"
 const feed = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false)    
 
+    const feedElements = [
+        {
+            date: "Oct 08, 2020",
+            title: "A Request to joined Alumni Members in Portal",
+            text: "Dear Alumni Members, It is observed that number of alumni registered in this alumni portal is constant now. We are around 3000 members of Alumni Association..."
+        },
+        {
+            date: "Sep 10, 2020",
+            title: "JOB OPENINGS",
+            text: "Dear Alumnis, Please post job opening in this thread mentioning briefly: 1. Name of company 2. Job profile 3. Eligibility Criteria/Qualification: 4...."
+        },
+        {
+            date: "Aug 25, 2020",
+            title: "Notice",
+            text: "All Alumni Member of GBPIET, Thank you all. We are very much pleased to see such a wonderful response in very short time. I want to inform you that this is an..."
+        }
+    ]
+
     return (
-        <div className="flex justify-center gap-x-16 mt-8 mb-6">
+        <div className="feedMain">
             <Head>
                 <title>GBPEC CampusFeed</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="flex flex-col gap-y-8 font-bold">
-                <div className='flex gap-x-2 items-center justify-center'>
+            <div className="feedList">
+                <div className='feedListForm'>
                     <form action="submit">
-                        <input className="bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Search by title..." />
+                        <input className="feedListFormInput" id="title" type="text" placeholder="Search by title..." />
                     </form>
                     <button className="bg-[#F13617] p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -37,37 +55,29 @@ const feed = () => {
                         <SiteButton text='Categories' count='2' />
                     </button>
                             
-                    <div className={`${dropdownOpen ? "hidden" : "absolute flex flex-col gap-y-4 mt-40"}`}>
-                        <a href='/feed' className='bg-gray-200 px-4 text-gray-600'>
+                    <div className={`${dropdownOpen ? "hidden" : "feedListDropdown"}`}>
+                        <a href='/feed' className='feedListDropdownMenu'>
                             <div>Alumni Stories</div>
                         </a>
                         
-                        <a href='/feed' className='bg-gray-200 px-4 text-gray-600'>
+                        <a href='/feed' className='feedListDropdownMenu'>
                             <div>Institute Updates</div>
                         </a>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col gap-y-6">
-                <FeedElement 
-                    date = "Oct 08, 2020"
-                    title = "A Request to joined Alumni Members in Portal"
-                    text = "Dear Alumni Members, It is observed that number of alumni registered in this alumni portal is constant now. We are around 3000 members of Alumni Association..."
-                />
-
-                <FeedElement 
-                    date = "Sep 10, 2020"
-                    title = "JOB OPENINGS"
-                    text = "Dear Alumnis, Please post job opening in this thread mentioning briefly: 1. Name of company 2. Job profile 3. Eligibility Criteria/Qualification: 4...."
-                />
-
-                <FeedElement 
-                    date = "Aug 25, 2020"
-                    title = "Notice"
-                    text = "All Alumni Member of GBPIET, Thank you all. We are very much pleased to see such a wonderful response in very short time. I want to inform you that this is an..."
-                />
-                
-                <div className="flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1">You have reached the end!</div>
+                {feedElements.map((feedElement, index) => {
+                    return (
+                        <FeedElement
+                            key={index}
+                            date={feedElement.date}
+                            title={feedElement.title}
+                            text={feedElement.text}
+                        />
+                    )
+                })}
+                <div className="feedListEnd">You have reached the end!</div>
             </div>
         </div>
     )

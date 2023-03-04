@@ -348,6 +348,7 @@
     @apply flex flex-col gap-y-4
 }
 
+
 /**Events*/
 .eventsMain {
     @apply flex justify-center gap-x-12 mt-12 mb-32
@@ -663,4 +664,67 @@
 
 .branchesGrid {
     @apply grid grid-cols-4 gap-x-8 gap-y-6 px-96
+}
+
+
+/*Feed*/
+.feedMain {
+    @apply flex justify-center gap-x-16 mt-8 mb-6
+}
+
+.feedList {
+    @apply flex flex-col gap-y-8 font-bold
+}
+
+.feedListForm {
+    @apply flex gap-x-2 items-center justify-center
+}
+
+.feedListFormInput {
+    @apply bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none
+}
+
+.feedListDropdown {
+    @apply absolute flex flex-col gap-y-4 mt-40
+}
+
+.feedListDropdownMenu {
+    @apply bg-gray-200 px-4 text-gray-600
+}
+
+.feedListEnd {
+    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+}
+
+/*Gallary*/
+.gallaryMain {
+    @apply flex flex-col justify-center items-center gap-y-8 my-8 mx-auto
+}
+
+.gallaryHeader {
+    @apply font-bold text-3xl pb-8
+}
+
+.gallaryInfo {
+    @apply grid grid-cols-4 gap-x-8 gap-y-6
+}
+
+.gallaryOwner {
+    @apply flex gap-x-2 items-center
+}
+
+.gallaryIcons {
+    @apply flex gap-x-4 justify-end w-full
+}
+
+.gallaryLike {
+    @apply flex items-center justify-start gap-x-8 bg-gray-300 py-2 px-4 w-full
+}
+
+.gallaryLikeButton {
+    @apply flex items-center justify-center gap-x-1
+}
+
+.gallaryImages {
+    @apply grid grid-cols-4 gap-x-4 gap-y-4
 }
