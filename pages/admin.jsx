@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useState } from "react"
 
 import SiteButtonAdmin from "../components/admin/SiteButtonAdmin"
