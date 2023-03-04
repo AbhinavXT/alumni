@@ -602,7 +602,7 @@
 
 /*Alumni*/
 .alumniMain {
-    @apply flex flex-col gap-y-2 bg-slate-200 border border-gray-300 shadow-lg
+    @apply flex flex-col gap-y-2 bg-slate-200 border border-gray-300 shadow-lg cursor-pointer
 }
 
 .alumniImage {
@@ -618,7 +618,7 @@
 }
 
 .alumniButton {
-    @apply flex justify-center items-center gap-x-2 pb-2 text-sm
+    @apply flex justify-center items-center gap-x-2 pb-2 text-sm hover:bg-[#010673] py-2 text-[#00004F] hover:text-gray-200 
 }
 
 

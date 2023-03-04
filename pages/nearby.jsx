@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import GoogleMapReact from 'google-map-react';
 
 const Marker = () =>  {
@@ -17,6 +18,11 @@ const nearby = () => {
 
     return (
         <div className='min-w-full h-[44rem] -my-6'>
+            <Head>
+                <title>Nearby Alumni</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <GoogleMapReact
                 defaultCenter={location.center}
                 defaultZoom={location.zoom}

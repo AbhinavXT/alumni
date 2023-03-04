@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useState } from "react"
 
 import SearchButton from "../components/SearchButton"
@@ -12,6 +13,10 @@ const directory = () => {
 
     return (
         <div className="directoryMain">
+            <Head>
+                <title>Alumni Directory</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className="directoryOuterDiv">
                 <div className="text-lg">Filters</div>
                 <div className='directoryFormOuterDiv'>

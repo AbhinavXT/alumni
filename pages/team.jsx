@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 
 const team = () => {
@@ -31,6 +32,11 @@ const team = () => {
 
     return (
         <div className='teamMain'>
+            <Head>
+                <title>GBPEC Alumni Team</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className='text-3xl'>GBPIET Alumni Association Committee</div>
             <div className='flex gap-x-16'>
                 {members.map((member, index) => {

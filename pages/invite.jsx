@@ -1,8 +1,14 @@
+import Head from 'next/head'
 import Image from 'next/image'
 
 const invite = () => {
   return (
     <div className='inviteMain'>
+        <Head>
+            <title>Invite</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className='inviteImageDiv'>
             <div>
                 <Image

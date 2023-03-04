@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import React from 'react'
 
 const aboutus = () => {
 	return (
 		<div className='aboutusMain'>
+			<Head>
+                <title>About</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 			<div className='aboutusMainDiv'>About GBPEC</div>
 			<div className='aboutusMainDivText'>
 				<div className='text-xl'>Govind Bhallabh Pant Institute of Engineering & Technology</div>

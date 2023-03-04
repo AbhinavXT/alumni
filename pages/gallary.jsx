@@ -1,8 +1,14 @@
+import Head from "next/head"
 import Image from "next/image"
 
 const gallary = () => {
     return (
         <div className="flex flex-col justify-center items-center gap-y-8 my-8 mx-auto">
+            <Head>
+                <title>Gallary</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="font-bold text-3xl pb-8">Old Memories</div>
             
             <div className="flex gap-x-36 items-center">

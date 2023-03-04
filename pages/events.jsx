@@ -1,3 +1,5 @@
+import Head from "next/head"
+
 import { useState } from "react"
 import SiteButton from "../components/SiteButton"
 
@@ -6,6 +8,10 @@ const events = () => {
 
     return (
         <div className="eventsMain">
+            <Head>
+                <title>Campus Events</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className="eventsList">
                 <div className='eventListSearch'>
                     <form action="submit">

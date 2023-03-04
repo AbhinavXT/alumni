@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from "react"
 
 import Job from '../components/Job'
@@ -14,6 +15,10 @@ const careers = () => {
 
     return (
         <div className="careersMain">
+            <Head>
+                <title>Careers</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className="careersOuterDiv">
                 <div className="careerHeader">JOB CATEGORIES</div>
                 <div className="careersInnerDivs">

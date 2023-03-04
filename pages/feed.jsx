@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useState } from "react"
 
 import SiteButton from "../components/SiteButton"
@@ -8,6 +9,11 @@ const feed = () => {
 
     return (
         <div className="flex justify-center gap-x-16 mt-8 mb-6">
+            <Head>
+                <title>GBPEC CampusFeed</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="flex flex-col gap-y-8 font-bold">
                 <div className='flex gap-x-2 items-center justify-center'>
                     <form action="submit">

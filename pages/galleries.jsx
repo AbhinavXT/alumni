@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -9,6 +10,10 @@ const galleries = () => {
 
     return (
         <div className="galleriesMain">
+            <Head>
+                <title>GBPEC Gallary</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className="galleriesOuterDiv">
                 <div className="text-2xl font-light">GALLERY CATEGORIES</div>
                 <div className="flex flex-col gap-y-4">

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios'
 
@@ -22,6 +23,10 @@ const signup = () => {
 
     return (
         <div className='signUpMain'>
+            <Head>
+                <title>Signup</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className='signUpHeader'>Signup / Login</div>
 
             <div className='signUpImageOuterDiv'>

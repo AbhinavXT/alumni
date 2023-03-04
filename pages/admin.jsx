@@ -22,6 +22,11 @@ const admin = () => {
 
     return (
         <div className="flex justify-center gap-x-12 my-16">
+            <Head>
+                <title>Admin</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <div className="flex flex-col gap-y-8 font-bold">
                 <div className='flex text-2xl'>
                     Admin Dashboard

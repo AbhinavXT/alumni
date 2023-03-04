@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Notice from '../components/Notice'
 
@@ -51,6 +52,10 @@ const noticeboard = () => {
 
     return (
         <div className='noticeboardMain'>
+            <Head>
+                <title>Noticeboard</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div>
                 <div className='noticeboardOuterDiv'>
                     <div className='noticeboardImageDiv'>
