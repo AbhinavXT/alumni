@@ -1,47 +1,67 @@
-import Alumni from "../components/subComponents/Alumni"
+import Alumni from "../../../components/subComponents/Alumni"
+import { useRouter } from 'next/router'
 
 const branch = () => {
+    const router = useRouter()
+    const { branch, batch } = router.query
+
+    const branchName = "";
+
+    if(branch === "CSE") {
+        branchName = "Computer Science and Engg."
+    } else if(branch === "ME") {
+        branchName = "Mechanical Engg."
+    } else if(branch === "ECE") {
+        branchName = "Electronics and Comm. Engg."
+    } else if(branch === "EE") {
+        branchName = "Electrical Engg."
+    } else if(branch === "CE") {
+        branchName = "Civil Engg."
+    } else if(branch === "BT") {
+        branchName = "Biotechnology"
+    }
+
 	const alumns = [
 		{
 			image: '/i1.png',
 			name: 'Abhinav Pathak',
-			year: 2023,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Student'
 		},
 		{
 			image: '/i1.png',
 			name: 'Sahil De',
-			year: 2024,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Student'
 		},
 		{
 			image: '/i1.png',
 			name: 'Hina Puri',
-			year: 2022,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Alumni'
 		},
 		{
 			image: '/i1.png',
 			name: 'Amit Singh',
-			year: 2023,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Student'
 		},
 		{
 			image: '/i1.png',
 			name: 'Mohit Pant',
-			year: 2023,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Student'
 		},
 		{
 			image: '/i1.png',
 			name: 'Kiran Sharma',
-			year: 2023,
-			branch: 'Computer Science and Eng.',
+			year: batch,
+			branch: branchName,
 			status: 'Student'
 		},
 	] 

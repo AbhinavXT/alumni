@@ -1,4 +1,4 @@
-import Year from '../components/Year'
+import Year from '../../components/Year'
 
 const yearbook = () => {
     const years = [

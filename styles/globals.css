@@ -646,3 +646,21 @@
 .subMemoriesImage {
     @apply flex flex-col justify-center items-center h-2/5
 }
+
+
+/*branches*/
+.branchesMain {
+    @apply flex flex-col gap-y-16 -mt-60
+}
+
+.branchesHeader {
+    @apply flex justify-between items-center px-96
+}
+
+.branchesButton {
+    @apply text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300
+}
+
+.branchesGrid {
+    @apply grid grid-cols-4 gap-x-8 gap-y-6 px-96
+}
