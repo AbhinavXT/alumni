@@ -5,7 +5,7 @@ const profile = () => {
     const { profile } = router.query;
 
     return (
-        <div>{profile}</div>
+        <div className="flex justify-center items-center text-3xl font-bold">{profile}</div>
     )
 }   
 
