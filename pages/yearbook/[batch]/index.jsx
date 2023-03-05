@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Branch from '../../../components/Branch'
 
@@ -16,6 +17,10 @@ const branches = () => {
 
     return (
         <div className='branchesMain'>
+            <Head>
+                <title>{batch}</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className='branchesHeader'>
                 <div className='text-xl font-bold'>Select Course/Degree/Division/Department</div>
                 <button className='branchesButton'>View My Batchmates</button>

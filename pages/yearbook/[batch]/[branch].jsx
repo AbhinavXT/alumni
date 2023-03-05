@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Alumni from "../../../components/subComponents/Alumni"
 import { useRouter } from 'next/router'
 
@@ -27,47 +28,57 @@ const branch = () => {
 			name: 'Abhinav Pathak',
 			year: batch,
 			branch: branchName,
-			status: 'Student'
+			status: 'Student',
+			user: 'abhinavpathak'
 		},
 		{
 			image: '/i1.png',
 			name: 'Sahil De',
 			year: batch,
 			branch: branchName,
-			status: 'Student'
+			status: 'Student',
+			user: 'sahilde'
 		},
 		{
 			image: '/i1.png',
 			name: 'Hina Puri',
 			year: batch,
 			branch: branchName,
-			status: 'Alumni'
+			status: 'Alumni',
+			user: 'hinapuri'
 		},
 		{
 			image: '/i1.png',
 			name: 'Amit Singh',
 			year: batch,
 			branch: branchName,
-			status: 'Student'
+			status: 'Student',
+			user: 'AmitSingh'
 		},
 		{
 			image: '/i1.png',
 			name: 'Mohit Pant',
 			year: batch,
 			branch: branchName,
-			status: 'Student'
+			status: 'Student',
+			user: 'mohitpant'
 		},
 		{
 			image: '/i1.png',
 			name: 'Kiran Sharma',
 			year: batch,
 			branch: branchName,
-			status: 'Student'
+			status: 'Student',
+			user: 'kiransharma'
 		},
 	] 
 
   	return (
     	<div className="flex justify-center py-20">
+			<Head>
+                <title>{batch} {branch}</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
     	    <div className='grid grid-cols-4 gap-x-6 gap-y-6 px-auto'>
     	        {alumns.map((alumn) => {
 					return (
@@ -77,6 +88,7 @@ const branch = () => {
 							year={alumn.year}
 							branch={alumn.branch}
 							status={alumn.status}
+							user={alumn.user}
 						/>
 					)
 				})}
