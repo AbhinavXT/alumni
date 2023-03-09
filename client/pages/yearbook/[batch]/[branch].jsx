@@ -88,7 +88,6 @@ const branch = () => {
 							year={alumn.year}
 							branch={alumn.branch}
 							status={alumn.status}
-							user={alumn.user}
 						/>
 					)
 				})}

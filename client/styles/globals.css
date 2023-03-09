@@ -728,3 +728,54 @@
 .gallaryImages {
     @apply grid grid-cols-4 gap-x-4 gap-y-4
 }
+
+/*profile*/
+.profileMain {
+    @apply flex flex-col items-center -mt-6
+}
+
+.profileImage {
+    @apply flex flex-col items-center pt-14 gap-y-4 bg-gray-300 w-full
+}
+
+.profileDetails {
+    @apply flex flex-col text-center gap-y-1
+}
+
+.profileName {
+    @apply font-bold text-2xl
+}
+
+.profileInfo {
+    @apply flex gap-x-2 items-center justify-center
+}
+
+.profileInfoButton {
+    @apply flex gap-x-8 justify-center items-center pt-2
+}
+
+.profileButtonsComponent {
+    @apply border-black border-b-2 font-bold
+}
+
+
+/*Profile Compoenet*/
+.profileComponentMain {
+    @apply flex flex-col gap-y-12 px-60
+}
+
+.profileComponentFull {
+    @apply flex flex-col divide-y divide-gray-400
+}
+
+.profileComponentContactInner {
+    @apply flex justify-between px-2
+}
+
+.profileComponentInnerHeader {
+    @apply flex justify-between px-1
+}
+
+.profileComponentInfo {
+    @apply font-bold text-lg
+}
