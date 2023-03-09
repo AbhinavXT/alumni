@@ -3,8 +3,8 @@ import React from 'react'
 const Profile = () => {
     return (
         <div className='profileComponentMain'>
-            <div className='profileComponentContact'>
-                <div className='profileComponentFull'>
+            <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Contact Information</div>
                     <button className='text-red-700'>Edit</button>
                 </div>
@@ -25,7 +25,7 @@ const Profile = () => {
             </div>
 
             <div className='profileComponentFull'>
-                <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Summary</div>
                     <button className='text-red-700'>Edit</button>       
                 </div>
@@ -39,7 +39,7 @@ const Profile = () => {
             </div>
 
             <div className='profileComponentFull'>
-                <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Education</div>
                     <button className='text-red-700'>Edit</button>
                 </div>
@@ -52,21 +52,21 @@ const Profile = () => {
                 </div>
             </div>
             <div className='profileComponentFull'>
-                <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Work experience</div>
                     <button className='text-red-700'>Edit</button>
                 </div>
                 <div className='text-red-600 px-2'> Share your work history to enhance your networking potential</div>
             </div>
             <div className='profileComponentFull'>
-                <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Skills</div>
                     <button className='text-red-700'>Edit</button>
                 </div>
                 <div className='px-2'>C++, JavaScript, Solidity, SQL, HTML, CSS, React/Next.js, Hardhat, Git</div>
             </div>
             <div className='profileComponentFull'>
-                <div className='profileComponentFull'>
+                <div className='profileComponentInnerHeader'>
                     <div className='profileComponentInfo'>Basic Information</div>
                     <button className='text-red-700'>Edit</button>
                 </div>
