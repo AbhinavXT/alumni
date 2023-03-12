@@ -10,7 +10,6 @@ import data from '../data/users.json'
 
 
 const profile = () => {
-    const [user, setUser] = ({});
     const [component, setComponent] = useState(0)
 
     const router = useRouter();
