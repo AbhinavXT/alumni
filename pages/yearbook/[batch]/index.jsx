@@ -9,7 +9,8 @@ const branches = () => {
         {branch:'ECE',memberNum:'4'},
         {branch:'EE',memberNum:'5'},
         {branch:'CE',memberNum:'3'},
-        {branch:'BT',memberNum:'5'}
+        {branch:'BT',memberNum:'5'},
+        {branch:'MCA',memberNum:'5'}
     ]
 
     const router = useRouter()
