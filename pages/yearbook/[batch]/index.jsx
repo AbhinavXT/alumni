@@ -10,12 +10,13 @@ const branches = () => {
         {branch:'EE',memberNum:'5'},
         {branch:'CE',memberNum:'3'},
         {branch:'BT',memberNum:'5'},
-        {branch:'MCA',memberNum:'5'}
+        {branch:'MCA',memberNum:'7'}
     ]
 
+    
     const router = useRouter()
     const { batch } = router.query
-
+    
     return (
         <div className='branchesMain'>
             <Head>
