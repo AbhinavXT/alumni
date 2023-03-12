@@ -36,6 +36,7 @@ const Memories = () => {
                             title={subMemories.title}
                             text={subMemories.text}
                             views={subMemories.views}
+                            key={index}
                         />
                     )
                 })}

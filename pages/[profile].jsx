@@ -1,16 +1,33 @@
 import { useRouter } from "next/router"
 import Image from 'next/image'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import Profile from '../components/Profile'
 import Network from '../components/Network'
 
+import data from '../data/users.json'
+
+
 const profile = () => {
+    const [user, setUser] = ({});
+    const [component, setComponent] = useState(0)
+
     const router = useRouter();
     const { profile } = router.query;
 
-    const [component, setComponent] = useState(0)
+    // const matchUser = () => {
+    //     for(let i = 0; i < data.length; i++) {
+    //         if(profile === data[i]["First Name"] + " " +data[i]["Last Name"]) {
+    //             setUser(data[i])
+    //             break
+    //         }       
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     matchUser()
+    // }, [])
 
     return (
         <div className="profileMain">
