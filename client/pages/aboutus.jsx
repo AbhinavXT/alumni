@@ -5,7 +5,7 @@ const aboutus = () => {
 	return (
 		<div className='aboutusMain'>
 			<Head>
-                <title>About</title>
+                <title>About Us</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 			<div className='aboutusMainDiv'>About GBPEC</div>
