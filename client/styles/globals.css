@@ -10,16 +10,16 @@
 
 /*Navbar*/
 .navbarMain {
-    @apply flex justify-center items-center gap-x-20 py-2 bg-[#F13617] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold
+    @apply flex justify-center items-center gap-x-20 py-2 bg-[#E63946] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold
 }
 
 /*Header*/
 .headerMain {
-    @apply flex bg-[#00004F] justify-center items-center gap-x-96 text-gray-200 pt-4 pb-8
+    @apply flex bg-[#1D3557] justify-center items-center gap-x-96 text-gray-200 pt-4 pb-8
 }
 
 .headerLinks {
-    @apply flex items-center justify-center bg-[#20205F] px-4 py-2 rounded-lg shadow-lg hover:shadow-[#363691] ease-in duration-500
+    @apply flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-lg hover:shadow-[#363691] ease-in duration-500
 }
 
 
@@ -65,7 +65,7 @@
 
 /*Contact*/
 .contactHeadingText {
-    @apply text-3xl font-extrabold text-gray-200 bg-[#00004F] w-screen py-16 text-center
+    @apply text-3xl font-extrabold text-gray-200 bg-[#1D3557] w-screen py-16 text-center
 }
 
 .contactInfoMain {
@@ -105,7 +105,7 @@
 }
 
 .contactFormSubmit {
-    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+    @apply flex py-2 px-6 bg-[#1D3557] w-24 rounded-md text-gray-200
 }
 
 
@@ -165,7 +165,7 @@
 }
 
 .notableAlumniImageOuterDiv {
-    @apply h-80 w-[379px] bg-[#00004F] shadow-lg hover:scale-105 ease-in duration-500
+    @apply h-80 w-[379px] bg-[#1D3557] shadow-lg hover:scale-105 ease-in duration-500
 }
 
 .notableAlumniImageInnerDiv {
@@ -191,7 +191,7 @@
 }
 
 .memoriesHeaderTextInnerDivTwo {
-    @apply px-6 py-1 border border-[#00004F]
+    @apply px-6 py-1 border border-[#1D3557]
 }
 
 .memoriesGrid {
@@ -213,7 +213,7 @@
 }
 
 .feedElementTitle {
-    @apply font-bold text-[#00004F]
+    @apply font-bold text-[#1D3557]
 }
 
 
@@ -261,7 +261,7 @@
 }
 
 .noticeOwner {
-    @apply text-[#F13617] font-bold
+    @apply text-[#E63946] font-bold
 }
 
 .noticeTitle {
@@ -301,11 +301,11 @@
 }
 
 .noticeViewButton {
-    @apply px-2 py-1 border-2 border-[#00004F]
+    @apply px-2 py-1 border-2 border-[#1D3557]
 }
 
 .noticeApplyButton {
-    @apply px-4 py-1 bg-[#00004F] text-gray-200
+    @apply px-4 py-1 bg-[#1D3557] text-gray-200
 }
 
 
@@ -409,7 +409,7 @@
 }
 
 .inviteFormButton {
-    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+    @apply flex py-2 px-6 bg-[#1D3557] w-24 rounded-md text-gray-200
 }
 
 
@@ -466,7 +466,7 @@
 }
 
 .yearbookBatchmate {
-    @apply text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300
+    @apply text-[#1D3557] border-2 rounded-md border-[#1D3557] py-1 px-2 hover:bg-[#1D3557] hover:text-gray-200 ease-in duration-300
 }
 
 .yearbookGrid {
@@ -586,7 +586,7 @@
 }
 
 .noticeboardFormButton {
-    @apply flex py-2 px-6 bg-[#00004F] w-24 rounded-md text-gray-200
+    @apply flex py-2 px-6 bg-[#1D3557] w-24 rounded-md text-gray-200
 }
 
 .noticeboardGridMain {
@@ -620,7 +620,7 @@
 }
 
 .alumniButton {
-    @apply flex justify-center items-center border-t border-t-gray-300 gap-x-2 pb-2 text-sm hover:bg-[#010673] py-2 text-[#00004F] hover:text-gray-200 
+    @apply flex justify-center items-center border-t border-t-gray-300 gap-x-2 pb-2 text-sm hover:bg-[#010673] py-2 text-[#1D3557] hover:text-gray-200 
 }
 
 
@@ -660,7 +660,7 @@
 }
 
 .branchesButton {
-    @apply text-[#00004F] border-2 rounded-md border-[#00004F] py-1 px-2 hover:bg-[#00004F] hover:text-gray-200 ease-in duration-300
+    @apply text-[#1D3557] border-2 rounded-md border-[#1D3557] py-1 px-2 hover:bg-[#1D3557] hover:text-gray-200 ease-in duration-300
 }
 
 .branchesGrid {

@@ -4,9 +4,9 @@ import NavButton from './subComponents/NavButton'
 const Navbar = () => {
     return (
         <div className="navbarMain">
-            <NavButton title='CAMPUSFEED' path='/feed'/>
+            <NavButton title='FEED' path='/feed'/>
 
-            <NavButtonDropDown title='FIND ALUMNI' dropList={[
+            <NavButtonDropDown title='ALUMNI NETWORK' dropList={[
                 {
                     title: 'Alumni Directory',
                     path: '/directory'
@@ -41,7 +41,7 @@ const Navbar = () => {
                 }
             ]}/>
 
-            <NavButtonDropDown title='CAREERS' dropList={[
+            <NavButtonDropDown title='CAREER' dropList={[
                 {
                     title: 'Jobs',
                     path: '/careers'
@@ -52,7 +52,7 @@ const Navbar = () => {
                 }
             ]}/>
 
-            <NavButtonDropDown title='ABOUT' dropList={[
+            <NavButtonDropDown title='ABOUT US' dropList={[
                 {
                     title: 'Team',
                     path: '/team'
