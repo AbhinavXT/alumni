@@ -3,7 +3,7 @@ import Image from 'next/image'
 const NotableAlumni = () => {
     return (
         <div className='flex justify-center items-center gap-x-4 py-12 px-96'>
-            <div className='flex flex-col border-2 border-black px-4 rounded-md py-2 gap-y-4 bg-gray-300'>
+            <div className='flex flex-col border-2 border-black px-4 rounded-md py-2 gap-y-4 bg-gray-300 shadow-lg'>
                 <div className='text-xl font-bold py-2'>ABOUT GBPIET</div>
                 <div className='flex items-center justify-center'>
                     <iframe
@@ -24,7 +24,7 @@ const NotableAlumni = () => {
                 <button className='bg-[#010673] w-32 p-2 rounded-md text-center text-gray-200 font-bold'>Read More</button>
             </div>
 
-            <div className='flex flex-col border-2 border-black px-4 rounded-md py-2 gap-y-4 bg-gray-300'>
+            <div className='flex flex-col border-2 border-black px-4 rounded-md py-2 gap-y-4 bg-gray-300 shadow-lg'>
                 <div className='text-xl font-bold py-2'>DIRECTOR'S MESSAGE</div>
                 <div className='flex items-center justify-center'>
                     <Image
