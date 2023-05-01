@@ -3,7 +3,6 @@ import PhotoCarousel from '../components/PhotoCarousel'
 import NotableAlumni from '../components/NotableAlumni.jsx'
 import Info from '../components/Info'
 import Submissions from '../components/Submissions'
-import Events from '../components/Events'
 import Albums from '../components/Albums'
 import Memories from '../components/Memories'
 import Contact from '../components/Contact'
@@ -30,10 +29,6 @@ const Home = () => {
             
             <div>
                 <Submissions />
-            </div>
-            
-            <div>
-                <Events />
             </div>
 
             <div>

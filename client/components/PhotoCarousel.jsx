@@ -8,8 +8,8 @@ const PhotoCarousel = () => {
             className="h-[600px]"
             showThumbs={false}
             autoPlay={true}
-            interval={1500}
-            transitionTime={1000}
+            interval={3500}
+            transitionTime={1500}
             infiniteLoop={true}
             showStatus={false}
             showIndicators={false}

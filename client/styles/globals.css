@@ -10,12 +10,12 @@
 
 /*Navbar*/
 .navbarMain {
-    @apply flex justify-center items-center gap-x-20 py-2 bg-[#E63946] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold
+    @apply flex justify-center items-center gap-x-20 py-2 bg-[#1d3557] rounded-md mx-[16rem] px-12 z-10 -mt-4 text-gray-200 font-semibold
 }
 
 /*Header*/
 .headerMain {
-    @apply flex bg-[#1D3557] justify-center items-center gap-x-96 text-gray-200 pt-4 pb-8
+    @apply flex bg-[#0D2E71] justify-center items-center gap-x-96 text-gray-200 pt-4 pb-8
 }
 
 .headerLinks {
@@ -115,7 +115,7 @@
 }
 
 .jobListHeader {
-    @apply flex flex-col px-8 py-4 rounded-sm text-lg bg-[#010673] text-gray-200 text-left gap-y-4
+    @apply flex flex-col px-8 py-4 rounded-sm text-lg bg-[#1d3557] text-gray-200 text-left gap-y-4
 }
 
 .jobAddButton {
@@ -147,33 +147,11 @@
 }
 
 .jobPrefrenceSaveButtonButton {
-    @apply bg-[#010673] text-gray-200 px-6 py-2 rounded
+    @apply bg-[#1d3557] text-gray-200 px-6 py-2 rounded
 }
 
 .jobNoticeMain {
     @apply flex flex-col gap-y-4 py-2 rounded-sm
-}
-
-
-/*NotableAlumni*/
-.notableAlumniMain {
-    @apply flex flex-col py-12 justify-center items-center gap-y-8
-}
-
-.notableAlumniText {
-    @apply text-3xl font-extrabold
-}
-
-.notableAlumniImageOuterDiv {
-    @apply h-80 w-[379px] bg-[#1D3557] shadow-lg hover:scale-105 ease-in duration-500
-}
-
-.notableAlumniImageInnerDiv {
-    @apply flex flex-col justify-center items-center h-1/2
-}
-
-.notableAlumniImageInnerDivText {
-    @apply flex flex-col justify-center items-center bg-gray-200 h-1/2 w-full
 }
 
 
@@ -367,7 +345,7 @@
 }
 
 .eventListSearchButton {
-    @apply bg-[#F13617] p-4
+    @apply bg-[#1d3557] p-4
 }
 
 .eventListHeading {
@@ -518,7 +496,7 @@
 }
 
 .directoryAlumnsGrid {
-    @apply px-64 py-2 h-12 rounded-sm text-xl bg-[#010673] text-gray-200 text-center
+    @apply px-64 py-2 h-12 rounded-sm text-xl bg-[#1d3557] text-gray-200 text-center
 }
 
 
@@ -594,7 +572,7 @@
 }
 
 .noticeboardGridHeader {
-    @apply px-64 py-2 rounded-sm text-xl bg-[#010673] text-gray-200 text-center
+    @apply px-64 py-2 rounded-sm text-xl bg-[#1d3557] text-gray-200 text-center
 }
 
 .noticeboardGridDiv {
@@ -620,7 +598,7 @@
 }
 
 .alumniButton {
-    @apply flex justify-center items-center border-t border-t-gray-300 gap-x-2 pb-2 text-sm hover:bg-[#010673] py-2 text-[#1D3557] hover:text-gray-200 
+    @apply flex justify-center items-center border-t border-t-gray-300 gap-x-2 pb-2 text-sm hover:bg-[#1d3557] py-2 text-[#1D3557] hover:text-gray-200 
 }
 
 
