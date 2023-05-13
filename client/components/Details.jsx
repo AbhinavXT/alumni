@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const NotableAlumni = () => {
+const Details = () => {
     return (
         <div className='flex justify-center items-center gap-x-4 py-12 px-96'>
             <div className='flex flex-col border-2 border-black px-4 rounded-md py-2 gap-y-4 bg-gray-200 shadow-lg'>
@@ -9,7 +9,7 @@ const NotableAlumni = () => {
                     <iframe
                         width="500"
                         height="200"
-                        src="https://www.youtube.com/watch?v=99TFz9bfmoo&t"
+                        src="https://www.youtube.com/embed/99TFz9bfmoo&t"
                         title="Embedded youtube"
                     >
                     </iframe>
@@ -29,7 +29,7 @@ const NotableAlumni = () => {
                     <Image
                         src="/dir.jpg"
                         alt="Picture of the director"
-                        width={220}
+                        width={200}
                         height={200}
                     />
                 </div>
@@ -45,4 +45,4 @@ const NotableAlumni = () => {
     )
 }
 
-export default NotableAlumni
+export default Details
