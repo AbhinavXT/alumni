@@ -19,7 +19,7 @@
 }
 
 .headerLinks {
-    @apply flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-lg hover:shadow-[#363691] ease-in duration-500
+    @apply flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-lg shadow-[#363691] ease-in duration-500
 }
 
 
@@ -405,11 +405,11 @@
 }
 
 .signUpImageInnerDiv {
-    @apply flex flex-col items-center justify-center gap-y-8 px-12 text-center
+    @apply flex flex-col items-center justify-center gap-y-8 px-24 text-center
 }
 
 .signUpButtonOuterDiv {
-    @apply flex flex-col items-center justify-center gap-y-8 px-12
+    @apply flex flex-col items-center justify-center gap-y-8 px-24
 }
 
 .signUpButtonInnerDiv {
@@ -417,7 +417,7 @@
 }
 
 .signUpButton {
-    @apply text-center py-2 px-12 rounded text-gray-200
+    @apply text-center py-2 px-20 rounded text-gray-200
 }
 
 .signUpFormMain {

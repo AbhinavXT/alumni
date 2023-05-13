@@ -1,8 +1,11 @@
+import { signIn, signOut } from 'next-auth/react'
+import { useRouter } from 'next/router'
+
 import Image from 'next/image'
 import Navbar from './Navbar'
 import Link from 'next/link'
 
-const Header = () => {
+const Header = ({ session, status }) => {
     return (
         <div className='z-10'>
             <div className="headerMain">
@@ -18,11 +21,31 @@ const Header = () => {
                     </div>
                 </Link>
                 <div>
-                    <button className='headerLinks'>
-                        <Link href='/signup'>
-                            SIGN UP / LOGIN 
-                        </Link>
-                    </button>
+                    {status !== 'authenticated' ? (
+                        <button 
+                            className='headerLinks'
+                            onClick={() => signIn()}
+                        >
+                            SignUp / Login
+                        </button>
+                        ) : (
+                            <div className='flex justify-center items-center gap-x-4'>
+                                <button 
+                                    className='flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-md shadow-blue-400 ease-in duration-500'
+                                >
+                                    <Link href={`/${session.user.name}`}>
+                                        {session.user.name}
+                                    </Link>
+                                </button>
+                                <button 
+                                    className='flex items-center justify-center bg-red-800 px-8 py-2 rounded-lg shadow-md shadow-red-400 ease-in duration-500'
+                                    onClick={() => signOut()}
+                                >
+                                    SignOut
+                                </button>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
             <Navbar />
