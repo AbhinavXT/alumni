@@ -1,8 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { useState, useEffect } from "react"
 import Notice from '../components/Notice'
 
 const noticeboard = () => {
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+
     const notices = [
         {
             owner: "Shivam Ramola",
@@ -49,6 +52,18 @@ const noticeboard = () => {
             published: "Jul 18, 2022"
         }
     ]
+
+    const handleChange = event => {
+        setSearchTerm(event.target.value)
+    }
+    
+    useEffect(() => {
+      const results = notices.filter((notice) =>
+        notice.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setSearchResults(results);
+
+    }, [searchTerm]);
 
     return (
         <div className='noticeboardMain'>
@@ -126,7 +141,9 @@ const noticeboard = () => {
                         className="directoryFormInput" 
                         id="filter" 
                         type="text" 
-                        placeholder="Search keyword..." 
+                        placeholder="Search by title..."
+                        value={searchTerm}
+                        onChange={handleChange} 
                     />
                 </form>
                 <button className="bg-[#1D3557] p-4">
@@ -143,7 +160,7 @@ const noticeboard = () => {
                     + Add a notice
                 </button>
                 <div className="noticeboardGridDiv">
-                    {notices.map((notice, i) => {
+                    {searchResults.map((notice, i) => {
                         return (
                             <Notice  
                                 key={i}
