@@ -1,11 +1,13 @@
 import Head from "next/head"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import SiteButton from "../components/SiteButton"
 import FeedElement from "../components/FeedElement"
 
 const feed = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false)    
+    //const [dropdownOpen, setDropdownOpen] = useState(false)    
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
 
     const feedElements = [
         {
@@ -25,6 +27,18 @@ const feed = () => {
         }
     ]
 
+    const handleChange = event => {
+        setSearchTerm(event.target.value)
+    }
+    
+    useEffect(() => {
+      const results = feedElements.filter((feed) =>
+        feed.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setSearchResults(results);
+
+    }, [searchTerm]);
+
     return (
         <div className="feedMain">
             <Head>
@@ -32,7 +46,7 @@ const feed = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="feedList">
+            {/* <div className="feedList">
                 <div className='feedListForm'>
                     <form action="submit">
                         <input className="feedListFormInput" id="title" type="text" placeholder="Search by title..." />
@@ -65,9 +79,28 @@ const feed = () => {
                         </a>
                     </div>
                 </div>
+            </div> */}
+            <div className='eventListSearch'>
+                <form action="submit">
+                    <input 
+                        className="eventListSearchInput" 
+                        id="title" 
+                        type="text" 
+                        placeholder="Search by title..." 
+                        value={searchTerm}
+                        onChange={handleChange}
+                    />
+                </form>
+
+                <button className="eventListSearchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
             </div>
+
             <div className="flex flex-col gap-y-6">
-                {feedElements.map((feedElement, index) => {
+                {searchResults.map((feedElement, index) => {
                     return (
                         <FeedElement
                             key={index}

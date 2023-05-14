@@ -19,24 +19,23 @@ const directory = () => {
                 <title>Alumni Directory</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="directoryOuterDiv">
-                <div className="text-lg">Filters</div>
-                <div className='directoryFormOuterDiv'>
-                    <form action="submit">
-                        <input 
-                            className="directoryFormInput" 
-                            id="filter" 
-                            type="text" 
-                            placeholder="Enter keyword..." 
-                        />
-                    </form>
-                    <button className="bg-[#F13617] p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div className="flex flex-col gap-y-4">
+            {/* <div className="directoryOuterDiv"> */}
+            <div className='directoryFormOuterDiv'>
+                <form action="submit">
+                    <input 
+                        className="directoryFormInput" 
+                        id="filter" 
+                        type="text" 
+                        placeholder="Enter keyword..." 
+                    />
+                </form>
+                <button className="bg-[#1D3557] p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+                {/* <div className="flex flex-col gap-y-4">
                     <button onClick={() => {expand ? setExpand(false) : setExpand(true)}}>
                         <SearchButton expanded={expand} text='Search by Role' />
                     </button>
@@ -73,8 +72,8 @@ const directory = () => {
                     <button>
                         <SearchButton expanded={expand} text='Skills' /> 
                     </button>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
 
             <div className="flex flex-col gap-y-8">
                 <div className="directoryAlumnsGrid">{data.length} Members in community</div>

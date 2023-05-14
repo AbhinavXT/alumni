@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="navbarMain">
             <NavButton title='FEED' path='/feed'/>
 
-            <NavButtonDropDown title='ALUMNI NETWORK' dropList={[
+            <NavButtonDropDown title='ALUMNI' dropList={[
                 {
                     title: 'Alumni Directory',
                     path: '/directory'

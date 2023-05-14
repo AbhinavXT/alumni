@@ -53,7 +53,7 @@
 
 /*Alumns Grid*/
 .alumnsGridMain {
-    @apply grid grid-cols-4 gap-x-6 gap-y-6
+    @apply grid grid-cols-6 gap-x-6 gap-y-6
 }
 
 
@@ -329,26 +329,26 @@
 
 /**Events*/
 .eventsMain {
-    @apply flex justify-center gap-x-12 mt-12 mb-32
+    @apply flex flex-col items-center gap-y-12 -mt-96
 }
 
-.eventsList {
+/* .eventsList {
     @apply flex flex-col gap-y-8 font-bold
-}
+} */
 
 .eventListSearch {
     @apply flex gap-x-2 items-center justify-center
 }
 
 .eventListSearchInput {
-    @apply bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none
+    @apply bg-gray-100 w-[1200px] shadow appearance-none border rounded py-4 px-8 text-gray-700 leading-tight focus:outline-none
 }
 
 .eventListSearchButton {
     @apply bg-[#1d3557] p-4
 }
 
-.eventListHeading {
+/* .eventListHeading {
     @apply text-2xl font-light
 }
 
@@ -358,10 +358,10 @@
 
 .eventListCategoryDorpdown {
     @apply bg-gray-200 px-4 text-gray-600
-}
+} */
 
 .events {
-    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+    @apply flex w-[1000px] justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
 }
 
 
@@ -480,19 +480,19 @@
 
 /*Directory*/
 .directoryMain {
-    @apply flex justify-center gap-x-12 my-16 mx-80
+    @apply flex flex-col items-center justify-center gap-y-12 my-16 mx-80
 }
 
-.directoryOuterDiv {
+/* .directoryOuterDiv {
     @apply flex flex-col gap-y-12 font-bold
-}
+} */
 
 .directoryFormOuterDiv {
     @apply flex gap-x-2 items-center justify-center
 }
 
 .directoryFormInput {
-    @apply bg-gray-100 shadow appearance-none border rounded w-full py-4 px-8 text-gray-700 leading-tight focus:outline-none
+    @apply bg-gray-100 shadow appearance-none border rounded w-[1200px] py-4 px-8 text-gray-700 leading-tight focus:outline-none
 }
 
 .directoryAlumnsGrid {
@@ -502,7 +502,7 @@
 
 /*Galleries*/
 .galleriesMain {
-    @apply flex justify-center gap-x-12 -mt-48
+    @apply flex flex-col justify-center items-center gap-y-12 -mt-20
 }
 
 .galleriesOuterDiv {
@@ -517,8 +517,8 @@
     @apply bg-gray-200 px-4 text-gray-600
 }
 
-.gallarierNumber {
-    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+.gallariesNumber {
+    @apply flex justify-center items-center w-[1200px] bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
 }
 
 .galleriesImageOuterDiv {
@@ -532,10 +532,10 @@
 
 /*noticeboard*/
 .noticeboardMain {
-    @apply flex justify-center gap-x-12
+    @apply flex flex-col items-center justify-center mt-16 gap-y-8
 }
 
-.noticeboardOuterDiv {
+/* .noticeboardOuterDiv {
     @apply flex flex-col items-center justify-center gap-y-8 divide-y divide-gray-900 bg-gray-100 mx-auto my-6 px-8 py-8 rounded-md
 }
 
@@ -565,18 +565,18 @@
 
 .noticeboardFormButton {
     @apply flex py-2 px-6 bg-[#1D3557] w-24 rounded-md text-gray-200
-}
+} */
 
 .noticeboardGridMain {
     @apply flex flex-col my-6 gap-y-8
 }
 
 .noticeboardGridHeader {
-    @apply px-64 py-2 rounded-sm text-xl bg-[#1d3557] text-gray-200 text-center
+    @apply w-[1200px] px-64 py-2 rounded-sm text-xl bg-[#1d3557] text-gray-200 text-center
 }
 
 .noticeboardGridDiv {
-    @apply flex flex-col gap-y-4 py-2 rounded-sm
+    @apply flex flex-col gap-y-8 py-2 rounded-sm
 }
 
 
@@ -648,10 +648,10 @@
 
 /*Feed*/
 .feedMain {
-    @apply flex justify-center gap-x-16 mt-8 mb-6
+    @apply flex flex-col justify-center items-center gap-y-12 mt-12 mb-6
 }
 
-.feedList {
+/* .feedList {
     @apply flex flex-col gap-y-8 font-bold
 }
 
@@ -669,10 +669,10 @@
 
 .feedListDropdownMenu {
     @apply bg-gray-200 px-4 text-gray-600
-}
+} */
 
 .feedListEnd {
-    @apply flex justify-center items-center bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+    @apply flex justify-center items-center w-[1200px] bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
 }
 
 /*Gallary*/
