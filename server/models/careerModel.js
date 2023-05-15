@@ -31,7 +31,7 @@ const careerSchema = new mongoose.Schema({
     default: 0
   }
 }, {
-  timestamps: true // adds createdAt and updatedAt fields
+  timestamps: true 
 });
 
 const Career = mongoose.model('Career', careerSchema);
