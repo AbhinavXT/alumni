@@ -22,11 +22,6 @@ const Alumni = (props) => {
                     <div>{props.branch}(B.Tech)</div>
                     <div>Pauri, Uttrakhand</div>
                 </div>
-                <div className='alumniButton'>
-                    <button>
-                        + Add to Network
-                    </button>
-                </div>
             </div>
         </Link>
     )
