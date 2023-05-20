@@ -4,7 +4,7 @@
 
 /*Layout*/
 .layoutMain {
-    @apply flex min-h-screen flex-col justify-between bg-[#e5e5e5]
+    @apply flex min-h-screen flex-col justify-between bg-white
 }
 
 
@@ -474,7 +474,7 @@
 }
 
 .careersDropdownMenu {
-    @apply bg-gray-200 px-6 text-gray-600
+    @apply px-6 text-gray-600
 }
 
 
@@ -709,34 +709,6 @@
 }
 
 /*profile*/
-.profileMain {
-    @apply flex flex-col items-center -mt-6
-}
-
-.profileImage {
-    @apply flex flex-col items-center pt-14 gap-y-4 bg-gray-300 w-full
-}
-
-.profileDetails {
-    @apply flex flex-col text-center gap-y-1
-}
-
-.profileName {
-    @apply font-bold text-2xl
-}
-
-.profileInfo {
-    @apply flex gap-x-2 items-center justify-center
-}
-
-.profileInfoButton {
-    @apply flex gap-x-8 justify-center items-center pt-2
-}
-
-.profileButtonsComponent {
-    @apply border-black border-b-2 font-bold
-}
-
 
 /*Profile Compoenet*/
 .profileComponentMain {

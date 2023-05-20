@@ -5,7 +5,7 @@ const Alumni = (props) => {
     return (
         <Link href = {{
             pathname: '/[profile]',
-			query: { profile: props.firstName+props.lastName }
+			query: { profile: props.firstName + " " + props.lastName }
         }}>
             <div className='alumniMain'>
                 <div className='alumniImage'>

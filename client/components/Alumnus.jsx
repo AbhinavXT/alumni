@@ -1,6 +1,8 @@
 import Alumni from "./subComponents/Alumni"
 import data from "../data/users.json"
 
+//import clientPromise from "../lib/mongodb";
+
 const Alumnus = () => {
     return (
         <div className='alumnsGridMain'>
@@ -31,3 +33,22 @@ const Alumnus = () => {
 }
 
 export default Alumnus
+
+
+// export async function getServerSideProps() {
+//     try {
+//         const client = await clientPromise;
+//         const db = client.db("website");
+
+//         const users = await db
+//             .collection("users")
+//             .find({})
+//             .toArray();
+
+//         return {
+//             props: { users: JSON.parse(JSON.stringify(users)) },
+//         };
+//     } catch (e) {
+//         console.error(e);
+//     }
+// }
