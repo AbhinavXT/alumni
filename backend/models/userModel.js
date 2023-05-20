@@ -14,10 +14,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
-  summary: {
-    type: String,
-    default: ''
-  },
   education: {
     type: String,
     default: ''
@@ -36,6 +32,7 @@ const userSchema = new mongoose.Schema({
   },
   isAdmin: {
     type: Boolean,
+    required: true,
     default: false
   },
 }, {
