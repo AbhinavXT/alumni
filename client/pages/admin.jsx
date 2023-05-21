@@ -24,20 +24,20 @@ const profile = () => {
                     className="px-4 py-2 hover:shadow-lg hover:shadow-gray-300 rounded-md text-xl"
                     onClick={() => changeCompoenet(0)}
                 >
-                    Statistics
+                    Requests
                 </button>
-                
+
                 <button 
                     className="px-4 py-2 hover:shadow-lg hover:shadow-gray-300 rounded-md text-xl"
                     onClick={() => changeCompoenet(1)}
                 >
-                    Requests
+                    Statistics
                 </button>
             </div>
             
             <div className="">
-                {component === 0 && <Statistics />}
-                {component === 1 && <Requests />}
+                {component === 0 && <Requests />}
+                {component === 1 && <Statistics />}
             </div>
         </div>
     )
