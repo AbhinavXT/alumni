@@ -4,7 +4,7 @@ const Requests = () => {
     return (
         <div className='flex flex-col gap-y-16'>
             <div className='flex justify-between items-center'>
-                <div className='font-bold text-2xl'>Pending Requests(3)</div>
+                <div className='font-bold text-2xl'>Pending Requests</div>
             </div>
             <div className='flex flex-col gap-y-6'>
                 <div className='flex justify-between font-bold text-xl'>
