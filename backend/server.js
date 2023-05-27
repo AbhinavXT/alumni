@@ -5,6 +5,11 @@ import morgan from 'morgan'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 
+import directoryRoutes from './routes/api/directory.js'
+import authRoutes from './routes/api/auth.js'
+import profileRoutes from './routes/api/profile.js'
+import postRoutes from './routes/api/posts.js'
+
 dotenv.config()
 
 connectDB()
@@ -17,20 +22,14 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(express.json())
 
-const __dirname = path.resolve()
-app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
+app.get('/', (req, res) => {
+	res.send('API is running....')
+})
 
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static(path.join(__dirname, '/frontend/build')))
-
-	app.get('*', (req, res) =>
-		res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
-	)
-} else {
-	app.get('/', (req, res) => {
-		res.send('API is running....')
-	})
-}
+app.use('/api/directory', directoryRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/profile', profileRoutes)
+app.use('/api/posts', postRoutes)
 
 app.use(notFound)
 app.use(errorHandler)
