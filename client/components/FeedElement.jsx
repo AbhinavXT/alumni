@@ -22,9 +22,7 @@ const FeedElement = ({ date, title, text }) => {
             <div className='feedElementTitle'>{title}</div>
             
             <div className='text-sm font-light'>
-                {text.slice(0,102)}
-                <br/>
-                {text.slice(102)}
+                {text}
             </div>
         </div>
     )

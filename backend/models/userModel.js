@@ -10,34 +10,35 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  password: {
+    type: String,
+    required: true
+  },
   linkedin: {
     type: String,
     default: ''
   },
-  education: {
-    type: String,
+  mobile: {
+    type: Number,
     default: ''
-  },
-  workExperience: {
-    type: String,
-    default: ''
-  },
-  skills: {
-    type: [String],
-    default: []
   },
   basicInfo: {
     type: String,
     default: ''
+  },
+  avatar: {
+    type: String
   },
   isAdmin: {
     type: Boolean,
     required: true,
     default: false
   },
-}, {
-  timestamps: true // adds createdAt and updatedAt fields
-});
+  data: {
+    type: Date,
+    default: Date.now
+  }
+}, );
 
 const User = mongoose.model('User', userSchema);
 

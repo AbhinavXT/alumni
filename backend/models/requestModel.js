@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const requestSchema = new mongoose.Schema({
   owner: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: "users",
     required: true
   },
   type: {
