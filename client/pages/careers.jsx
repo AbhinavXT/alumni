@@ -3,14 +3,21 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from "react"
 import Notice from '../components/Notice'
 import notices from '../data/careers.json'
+import { getSession } from 'next-auth/react'
 
 import { useSession } from 'next-auth/react'
 
 const careers = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    const [user, setUser] = useState(null)
 
     const { data: session, status } = useSession()
+
+    const handleSession = async() => {
+        const session = await getSession()
+        setUser(session.user.email)
+    }
 
     const router = useRouter()
 
@@ -25,20 +32,29 @@ const careers = () => {
             router.push('/careerForm')
         }
     }
-    
-    useEffect(() => {
+
+    const getPosts = () => {
         const data = localStorage.getItem("post")
 
         console.log(JSON.parse(data))
 
         if(data !== null) {
-            const newPost = JSON.parse(data)
+            if(user === 'abhinavpathaka17@gmail.com' || user === null) {
+                const newPost = JSON.parse(data)
             
-            notices.push(newPost)
+                notices.push(newPost)
+            }
         }
 
         console.log(notices)
+    }
 
+    useEffect(() => {
+        handleSession()
+        getPosts()
+    }, [])
+    
+    useEffect(() => {
         const results = notices.filter((notice) =>
             notice.title.toLowerCase().includes(searchTerm.toLowerCase())
         );

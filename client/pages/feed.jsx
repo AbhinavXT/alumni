@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { useState, useEffect } from "react"
 import { useRouter } from 'next/router'
+import { getSession } from 'next-auth/react'
 
 import { useSession } from 'next-auth/react'
 import FeedElement from "../components/FeedElement"
@@ -10,10 +11,16 @@ import feedPosts from '../data/feed.json'
 const feed = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    const [user, setUser] = useState(null)
 
     const { data: session, status } = useSession()
 
     const router = useRouter()
+
+    const handleSession = async() => {
+        const session = await getSession()
+        setUser(session.user.email)
+    }
 
     const handleChange = event => {
         setSearchTerm(event.target.value)
@@ -26,18 +33,29 @@ const feed = () => {
             router.push('/feedForm')
         }
     }
-    
-    useEffect(() => {
+
+    const getPosts = () => {
         const data = localStorage.getItem("feedPost")
 
         console.log(JSON.parse(data))
 
-        if(data !== null) {
-            const newPost = JSON.parse(data)
-            
-            feedPosts.push(newPost)
-        }
+        console.log(user)
 
+        if(data !== null) {
+            if(user === 'abhinavpathaka17@gmail.com' || user === null) {
+                const newPost = JSON.parse(data)
+            
+                feedPosts.push(newPost)
+            }
+        }
+    }
+    
+    useEffect(() => {
+        handleSession()
+        getPosts()
+    }, [])
+
+    useEffect(() => {
         const results = feedPosts.filter((feed) =>
             feed.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
