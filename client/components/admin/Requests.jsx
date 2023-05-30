@@ -1,6 +1,7 @@
 import SubRequest from '../subComponents/SubRequest'
+import moment from 'moment'
 
-const Requests = () => {
+const Requests = ({ requests }) => {
     return (
         <div className='flex flex-col gap-y-16'>
             <div className='flex justify-between items-center'>
@@ -14,9 +15,12 @@ const Requests = () => {
                     <div>Info Link</div>
                     <div>Accept/Reject</div>
                 </div>
-                <SubRequest name={'Dipti Sharma'} type={'Registration'} date={'07-05-2023'} link={'/'} />
-                <SubRequest name={'Hem Chandra'} type={'Career Post'} date={'21-05-2023'} link={'/'} />
-                <SubRequest name={'Aman Singh'} type={'Feed Post'} date={'11-05-2023'} link={'/'} />
+
+                {requests.map((request, i) => {
+                    return (
+                        <SubRequest request={request} key={i} />
+                    )
+                })}
             </div>
         </div>
     )

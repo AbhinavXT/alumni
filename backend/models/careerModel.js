@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
 
 const careerSchema = new mongoose.Schema({
   owner: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    type: String,
     required: true
   },
-  post: {
+  title: {
     type: String,
     required: true
   },
@@ -23,15 +22,17 @@ const careerSchema = new mongoose.Schema({
     required: true
   },
   salary: {
-    type: Number,
+    type: String,
+    default: "Negotiable"
+  },
+  type: {
+    type: String,
     required: true
   },
-  numApplications: {
-    type: Number,
-    default: 0
+  link: {
+    type: String,
+    required: true,
   }
-}, {
-  timestamps: true 
 });
 
 const Career = mongoose.model('Career', careerSchema);

@@ -1,11 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
 
 const feedSchema = new mongoose.Schema({
-  date: {
-    type: Date,
-    required: true,
-    default: Date.now
-  },
   title: {
     type: String,
     required: true
@@ -13,9 +8,14 @@ const feedSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now(),
+    required: true
   }
 });
 
-const Feed = mongoose.model('FeedPost', feedSchema);
+const Feed = mongoose.model('Feed', feedSchema);
 
 export default Feed;

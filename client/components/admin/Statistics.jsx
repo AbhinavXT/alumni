@@ -8,7 +8,7 @@ const Statistics = () => {
             <div className='flex flex-col gap-y-6 px-8'>
                 <div className='flex items-center justify-between gap-x-20 font-bold'>
                     <div>Current Requests</div>
-                    <div className='text-blue-700 hover:underline cursor-pointer'>4</div>
+                    <div className='text-blue-700 hover:underline cursor-pointer'>1</div>
                 </div>
 
                 <div  className='flex items-center justify-between gap-x-20 font-bold'>

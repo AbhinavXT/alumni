@@ -18,11 +18,6 @@ const Notice = (props) => {
                     </span>
                     | {props.company}
                 </div>
-                <div className='cursor-pointer'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00004F" className="bi bi-share-fill" viewBox="0 0 16 16">
-                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                    </svg>
-                </div>
             </div>
 
             <div className='noticeDetails'>
@@ -38,10 +33,6 @@ const Notice = (props) => {
                     <div className='noticeDetailsLabel'>Salary</div>
                     <div className='noticeDetailsText'>{props.salary}</div>
                 </div>
-                <div>
-                    <div className='noticeDetailsLabel'>Applications</div>
-                    <div className='noticeDetailsText'>{props.applications} applied</div>
-                </div>
             </div>
             
             <div className='noticeType'>{props.type}</div>
@@ -56,13 +47,13 @@ const Notice = (props) => {
                     </div>
                     <div className='text-sm'>
                         <div className='font-bold'>{props.owner}</div>
-                        <div className='font-light'>Published On {props.published}</div>
                     </div>
                 </div>
 
                 <div className='flex gap-x-4'>
-                    <button className='noticeViewButton'>View Job Post</button>
-                    <button className='noticeApplyButton'>Apply</button>
+                    <button className='noticeApplyButton'>
+                        <a href={`${props.link}`}>Apply</a>
+                    </button>
                 </div>
             </div>
         </div>

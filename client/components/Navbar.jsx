@@ -4,53 +4,17 @@ import NavButton from './subComponents/NavButton'
 const Navbar = () => {
     return (
         <div className="navbarMain">
-            <NavButton title='FEED' path='/feed'/>
+            <NavButton title='NOTICEBOARD' path='/feed'/>
 
-            <NavButtonDropDown title='ALUMNI' dropList={[
-                {
-                    title: 'Alumni Directory',
-                    path: '/directory'
-                }, 
-                {
-                    title: 'Alumni Nearby',
-                    path: '/nearby'
-                }
-            ]}/>
+            <NavButton title='ALUMNI' path= '/directory' />
 
-            <NavButton title='NOTICEBOARD' path='/noticeboard'/>
+            <NavButton title='EVENTS' path= '/events' /> 
+            
+            <NavButton title='GALLARY' path= '/galleries' /> 
 
-            <NavButtonDropDown title='EVENTS' dropList={[
-                {
-                    title: 'Events',
-                    path: '/events'
-                }, 
-                {
-                    title:'Galleries',
-                    path: '/galleries'
-                }
-            ]}/>
+            <NavButton title='YEARBOOK' path='/yearbook' />
 
-            <NavButtonDropDown title='BATCHMATES' dropList={[
-                {
-                    title: 'YearBook',
-                    path: '/yearbook'
-                }, 
-                {
-                    title:'Invite Batchmates',
-                    path: '/invite'
-                }
-            ]}/>
-
-            <NavButtonDropDown title='CAREER' dropList={[
-                {
-                    title: 'Jobs',
-                    path: '/careers'
-                }, 
-                {
-                    title: 'Internships',
-                    path: '/careers'
-                }
-            ]}/>
+            <NavButton title='CAREER' path= '/careers' />
 
             <NavButtonDropDown title='ABOUT US' dropList={[
                 {

@@ -329,7 +329,7 @@
 
 /**Events*/
 .eventsMain {
-    @apply flex flex-col items-center gap-y-12 -mt-96
+    @apply flex flex-col items-center gap-y-12 mt-12 mb-96
 }
 
 /* .eventsList {
@@ -518,7 +518,7 @@
 }
 
 .gallariesNumber {
-    @apply flex justify-center items-center w-[1200px] bg-gray-300 px-64 py-4 h-12 rounded-sm mt-1
+    @apply flex justify-center items-center w-[1200px] bg-gray-300 px-64 py-4 h-12 rounded-sm mt-4
 }
 
 .galleriesImageOuterDiv {
