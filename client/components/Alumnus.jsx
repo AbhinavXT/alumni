@@ -1,8 +1,6 @@
 import Alumni from "./subComponents/Alumni"
 import data from "../data/users.json"
 
-//import clientPromise from "../lib/mongodb";
-
 const Alumnus = () => {
     return (
         <div className='alumnsGridMain'>

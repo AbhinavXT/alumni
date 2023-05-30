@@ -1,18 +1,11 @@
 import Head from "next/head"
 import { useState } from "react"
 
-import SearchButton from "../components/SearchButton"
 import Alumnus from "../components/Alumnus"
 
 import data from "../data/users.json"
 
 const directory = () => {
-    const [expand, setExpand] = useState(false)
-
-    const expansion = () => {
-        setExpand(true)
-    }
-
     return (
         <div className="directoryMain">
             <Head>
