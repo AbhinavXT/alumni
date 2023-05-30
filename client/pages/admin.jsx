@@ -7,6 +7,7 @@ import Requests from "../components/admin/Requests"
 const profile = () => {
     const [component, setComponent] = useState(0)
     const [newRequests, setNewRequests] = useState([])
+    const [feedRequests, setFeedRequests] = useState([])
     const [user, setUser] = useState(null)
 
     const handleSession = async() => {
@@ -14,15 +15,25 @@ const profile = () => {
         setUser(session.user.email)
     }
 
-    useEffect(async () => {
+    const getData = () => {
+        const jobData = localStorage.getItem("post")
+        const jobRequest =  jobData !== null ? JSON.parse(jobData) : null
+
+        const feedData = localStorage.getItem("feedPost")
+        const feedRequest =  feedData !== null ? JSON.parse(feedData) : null
+
+        if(jobRequest !== null) {
+            setNewRequests([...newRequests, jobRequest])
+        }
+
+        if(feedRequest !== null) {
+            setFeedRequests([...feedRequests, feedRequest])
+        }
+    }
+
+    useEffect(() => {
         handleSession()
-
-        const data = localStorage.getItem("post")
-
-        const request =  data !== null ? JSON.parse(data) : null
-
-        if(request !== null)
-            setNewRequests([...newRequests, request])
+        getData()
     }, [])
 
     const changeCompoenet = (comp) => {
@@ -56,7 +67,7 @@ const profile = () => {
             </div>
             
             <div className="">
-                {component === 0 && <Requests requests= {newRequests} />}
+                {component === 0 && <Requests requests= {newRequests} feedRequests={feedRequests} />}
                 {component === 1 && <Statistics />}
             </div>
         </div>

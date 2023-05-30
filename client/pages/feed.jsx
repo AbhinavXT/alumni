@@ -1,41 +1,47 @@
 import Head from "next/head"
 import { useState, useEffect } from "react"
+import { useRouter } from 'next/router'
 
-import SiteButton from "../components/SiteButton"
+import { useSession } from 'next-auth/react'
 import FeedElement from "../components/FeedElement"
 
+import feedPosts from '../data/feed.json'
+
 const feed = () => {
-    //const [dropdownOpen, setDropdownOpen] = useState(false)    
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
 
-    const feedElements = [
-        {
-            date: "Oct 08, 2020",
-            title: "A Request to joined Alumni Members in Portal",
-            text: "Dear Alumni Members, It is observed that number of alumni registered in this alumni portal is constant now. We are around 3000 members of Alumni Association..."
-        },
-        {
-            date: "Sep 10, 2020",
-            title: "JOB OPENINGS",
-            text: "Dear Alumnis, Please post job opening in this thread mentioning briefly: 1. Name of company 2. Job profile 3. Eligibility Criteria/Qualification: 4...."
-        },
-        {
-            date: "Aug 25, 2020",
-            title: "Notice",
-            text: "All Alumni Member of GBPIET, Thank you all. We are very much pleased to see such a wonderful response in very short time. I want to inform you that this is an..."
-        }
-    ]
+    const { data: session, status } = useSession()
+
+    const router = useRouter()
 
     const handleChange = event => {
         setSearchTerm(event.target.value)
     }
+
+    const handleClick = () => {
+        if(status !== 'authenticated')
+            alert('Please login or signup before posting')
+        else {
+            router.push('/feedForm')
+        }
+    }
     
     useEffect(() => {
-      const results = feedElements.filter((feed) =>
-        feed.title.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setSearchResults(results);
+        const data = localStorage.getItem("feedPost")
+
+        console.log(JSON.parse(data))
+
+        if(data !== null) {
+            const newPost = JSON.parse(data)
+            
+            feedPosts.push(newPost)
+        }
+
+        const results = feedPosts.filter((feed) =>
+            feed.title.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setSearchResults(results);
 
     }, [searchTerm]);
 
@@ -99,6 +105,13 @@ const feed = () => {
                 </button>
             </div>
 
+            <button
+                onClick={handleClick}
+                className="noticeboardGridHeader"
+            >
+                + Add a feed post
+            </button>
+
             <div className="flex flex-col gap-y-6">
                 {searchResults.map((feedElement, index) => {
                     return (
@@ -107,6 +120,7 @@ const feed = () => {
                             date={feedElement.date}
                             title={feedElement.title}
                             text={feedElement.text}
+                            feedNum={index}
                         />
                     )
                 })}
