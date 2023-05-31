@@ -16,7 +16,8 @@ const careers = () => {
 
     const handleSession = async() => {
         const session = await getSession()
-        setUser(session.user.email)
+        if(session)
+            setUser(session.user.email)
     }
 
     const router = useRouter()
