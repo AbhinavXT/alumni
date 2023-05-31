@@ -20,7 +20,7 @@ const Alumnus = () => {
                         passing={alumni["Year of Passing"]}
                         presentOrg={alumni["Present Organaization"]}
                         currentOrg={alumni["Current Organaization"]}
-                        experience={alumni.Experience}
+                        experience={alumni["Experience"]}
                         brief={alumni["Brief Profile"]}
                         key={i}
                     />

@@ -10,7 +10,7 @@ const profile = () => {
     const [component, setComponent] = useState(0)
 
     const router = useRouter();
-    const { profile } = router.query;
+    const { profile, email, start, end, mobile, exp, org, brief, course, branch } = router.query;
 
     const changeCompoenet = (comp) => {
         setComponent(comp)
@@ -29,8 +29,11 @@ const profile = () => {
 
                 <div className="flex flex-col gap-y-1">
                     <div className="font-bold text-2xl">{profile}</div>
-                    <div className="italic">Bachelors of Technology</div>
-                    <div className="italic">Computer Science and Engineering</div>
+                    <div className="flex gap-x-1">
+                        <div className="italic">{course},</div>
+                        <div className="italic">{branch}</div>
+                    </div>
+                    <div>{start} - {end}</div>
                     <div className="text-blue-700">Authorized User</div>    
                 </div>
             </div>
@@ -59,9 +62,9 @@ const profile = () => {
             </div>
             
             <div className="">
-                {component === 0 && <About />}
-                {component === 1 && <Education />}
-                {component === 2 && <Experience />}
+                {component === 0 && <About email={email} mobile={mobile} brief={brief} />}
+                {component === 1 && <Education start={start} end={end} course={course} branch={branch} />}
+                {component === 2 && <Experience brief={brief} org={org} exp={exp} end={end} />}
             </div>
         </div>
     )

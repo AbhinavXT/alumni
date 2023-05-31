@@ -6,7 +6,6 @@ const yearbook = () => {
         <div className='yearbookMain'>
             <div className='yearbookHeader'>
                 <div className='text-xl font-bold'>Select Year</div>
-                <button className='yearbookBatchmate'>View My Batchmates</button>
             </div>
             <div className='yearbookGrid'>
                 {batches.map((year, i) => {

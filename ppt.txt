@@ -1,0 +1,18 @@
+{
+    "owner": "Abhinav Pathak",
+    "title": "Software Developer 1",
+    "company": "AMB",
+    "location": "In, Office",
+    "deadline": "Aug 31, 2023",
+    "salary": "Negotiable",
+    "type": "Job",
+    "link": "https://global-external-amd.icims.com/jobs/31769/job?mobile=false&width=1140&height=500&bga=true&needsRedirect=false&jan1offset=330&jun1offset=330"
+}
+
+
+{
+    "owner": "Abhinav Pathak",
+    "date": "May 31, 2023",
+    "title": "First Post",
+    "text": "This is my first post"
+}

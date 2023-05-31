@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Education = () => {
+const Education = (props) => {
     return (
         <div className='flex flex-col gap-y-12 px-20 py-12'>
             <div className='font-bold text-2xl'>Education</div>
@@ -10,19 +10,11 @@ const Education = () => {
                 </div>
                 
                 <div className='flex justify-between'>
-                    <div className='italic'>B.Tech Computer Science and Engineering</div>
-                    <div className='italic'>2019-2023</div>
-                </div>
-            </div>
-
-            <div className='flex flex-col gap-y-1'>
-                <div className='flex justify-between'>
-                    <div className='text-xl font-bold'>XYZ School</div>
-                </div>
-                
-                <div className='flex justify-between'>
-                    <div className='italic'>Senior Secondry Certificate</div>
-                    <div className='italic'>2019</div>
+                    <div className='flex italic gap-x-1'>
+                        <div>{props.course},</div>
+                        <div>{props.branch}</div>
+                    </div>
+                    <div className='italic'>{props.start} - {props.end}</div>
                 </div>
             </div>
         </div>

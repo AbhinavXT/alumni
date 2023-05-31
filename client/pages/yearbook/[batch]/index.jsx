@@ -25,7 +25,6 @@ const branches = () => {
             </Head>
             <div className='branchesHeader'>
                 <div className='text-xl font-bold'>Select Course/Degree/Division/Department</div>
-                <button className='branchesButton'>View My Batchmates</button>
             </div>
             <div className='branchesGrid'>
                 {branch.map((branch, i) => {

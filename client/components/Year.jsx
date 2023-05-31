@@ -5,7 +5,7 @@ const Year = ({ batch, memberNum }) => {
   	return (
   	  	<Link href={{
 			pathname: '/yearbook/[batch]',
-			query: { batch: batch }
+			query: { batch: batch, num: memberNum }
 		}}>
   	  	  	<div className='yearMain'>
   	  	  	  	<div className='font-bold'>Class of {batch}</div>
