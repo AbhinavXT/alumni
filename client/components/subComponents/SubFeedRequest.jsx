@@ -23,8 +23,8 @@ const SubFeedRequest = ({ feedRequest }) => {
             <div>{ feedRequest.owner }</div>
             <div>{ feedRequest.type }</div>
             <div>{ moment().format('MMM D YYYY') }</div>
-            <a href={request.link} className='text-blue-700 underline'>
-                {request.link && <div>link</div>}
+            <a href={request.link} className='text-blue-700'>
+                {request.link ? (<div>link</div>) : (<div>----</div>)}
             </a>
             {accept === 0 && reject === 0 && (
                 <div className='flex gap-x-2 items-center'>

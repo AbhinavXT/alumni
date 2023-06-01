@@ -1,0 +1,42 @@
+[
+    {
+        "owner": "Shivam Ramola",
+        "title": "Technical Consultant",
+        "company": "PwC India",
+        "location": "Pan India",
+        "deadline": "Nov 30, 2022",
+        "salary": "Negotiable",
+        "type": "Job",
+        "link": "/"
+    },
+    {
+        "owner": "Shekhar B",
+        "title": "Engineer",
+        "company": "Bechtel Corporation",
+        "location": "Gurgaon District",
+        "deadline": "Sep 22, 2022",
+        "salary": "Negotiable",
+        "type": "Job",
+        "link": "/"
+    },
+    {
+        "owner": "Mohit Aggrawal",
+        "title": "Software Architect",
+        "company": "HCL Technologies Limited",
+        "location": "Noida",
+        "deadline": "Jan 31, 2022",
+        "salary": "Negotiable",
+        "type": "Job",
+        "link": "/"
+    },
+    {
+        "owner": "Prafull Pandey",
+        "title": "Web Developer",
+        "company": "MyRx Technologies",
+        "location": "Work From Home",
+        "deadline": "Jul 31, 2022",
+        "salary": "Based on talent",
+        "type": "Internship",
+        "link": "/"
+    }
+]

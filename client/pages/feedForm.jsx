@@ -10,7 +10,7 @@ const careerForm = () => {
         owner: '',
         title: '',
         text:'',
-        type:'Feed Post',
+        type:'Feed',
         date: moment().format('MMM D YYYY'),
         status: 0
     });

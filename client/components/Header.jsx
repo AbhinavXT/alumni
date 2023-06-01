@@ -1,9 +1,25 @@
 import { signIn, signOut } from 'next-auth/react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Navbar from './Navbar'
 import Link from 'next/link'
 
 const Header = ({ session, status }) => {
+    const [sub, setSub] = useState(null)
+
+    const handleSession = async() => {
+        const subAdmin = localStorage.getItem("subAdminEmail")
+
+        console.log(subAdmin)
+
+        if(subAdmin)
+            setSub(subAdmin)
+    }
+
+    useEffect(() => {
+        handleSession()
+    }, [])
+
     return (
         <div className='z-10'>
             <div className="headerMain">
@@ -41,7 +57,7 @@ const Header = ({ session, status }) => {
                                 >
                                     SignOut
                                 </button>
-                                {session.user.email === 'abhinavpathaka17@gmail.com' 
+                                {(session.user.email === 'abhinavpathaka17@gmail.com' || session.user.email === sub)
                                     && 
                                     <button 
                                         className='flex items-center justify-center bg-white px-8 py-2 rounded-lg shadow-md shadow-gray-400 text-black ease-in duration-500'
