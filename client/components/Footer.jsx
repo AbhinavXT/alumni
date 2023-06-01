@@ -51,9 +51,8 @@ const Footer = () => {
         <div className="flex divide-x">
             <a href="/" className="footerLinks">HOME</a>
             <a href="/aboutus" className="footerLinks">ABOUT</a>
-            <a href="/" className="footerLinks">CONTACT</a>
+            <a href="/aboutus" className="footerLinks">CONTACT</a>
             <a href="/aboutus" className="footerLinks">TERMS</a>
-            <a href="/aboutus" className="footerLinks">PRIVACY</a>
         </div>
     </div>
   )

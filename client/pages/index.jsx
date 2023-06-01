@@ -38,10 +38,6 @@ const Home = () => {
             <div>
                 <Memories />
             </div>
-
-            <div>
-                <Contact />
-            </div>
         </div>
     )
 }
