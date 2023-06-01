@@ -7,8 +7,23 @@ const router = express.Router();
 // @route GET api/career
 // @desc get all career posts
 // @access Public
-router.get('/', (req, res) => res.send('Career GET route'))
+router.get("/", (req, res) => {
+    Career.find()
+      .sort({ date: -1 })
+      .then(posts => res.json(posts))
+      .catch(err => res.status(404).json({ nopostsfound: "No posts found" }));
+});
 
+// @route GET api/career/:id
+// @desc get all career posts
+// @access Public
+router.get("/:id", (req, res) => {
+    Post.findById(req.params.id)
+      .then(post => res.json(post))
+      .catch(err =>
+        res.status(404).json({ nopostfound: "No post found with that ID" })
+      );
+  });
 
 // @route POST api/career
 // @desc get all career posts
