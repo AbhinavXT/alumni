@@ -12,7 +12,6 @@ const branches = () => {
         {branch:'BT',memberNum:'5'},
         {branch:'MCA',memberNum:'7'}
     ]
-
     
     const router = useRouter()
     const { batch } = router.query

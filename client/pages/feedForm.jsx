@@ -40,7 +40,7 @@ const careerForm = () => {
 
     return (
         <form className="flex flex-col gap-y-6 itmes-left items-left px-[600px] justify-center my-16">
-            <div className="flex items-center justify-center font-bold text-2xl pb-12">Career Post Form</div>
+            <div className="flex items-center justify-center font-bold text-2xl pb-12">Feed Post Form</div>
             <div className="flex flex-col gap-y-1">
                 <label className="font-bold text-lg ">Full Name</label>
                 <input 
