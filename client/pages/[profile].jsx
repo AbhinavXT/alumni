@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState, useEffect } from "react"
 
 import About from "../components/profile/About"
@@ -18,23 +19,31 @@ const profile = () => {
     
     return (
         <div className="flex flex-col items-left -mt-6 gap-y-8 py-16 px-96 h-screen">
-            <div className="flex gap-x-9 items-center">
-                <Image 
-                    src = '/i1.png'
-                    alt = 'Profile Picture'
-                    height = {150}
-                    width = {150}
-                    className="rounded-full"
-                />
+            <div className="flex justify-between items-center">
+                <div className="flex gap-x-9 items-center">
+                    <Image 
+                        src = '/i1.png'
+                        alt = 'Profile Picture'
+                        height = {150}
+                        width = {150}
+                        className="rounded-full"
+                        />
 
-                <div className="flex flex-col gap-y-1">
-                    <div className="font-bold text-2xl">{profile}</div>
-                    <div className="flex gap-x-1">
-                        <div className="italic">{course},</div>
-                        <div className="italic">{branch}</div>
+                    <div className="flex flex-col gap-y-1">
+                        <div className="font-bold text-2xl">{profile}</div>
+                        <div className="flex gap-x-1">
+                            <div className="italic">{course},</div>
+                            <div className="italic">{branch}</div>
+                        </div>
+                        <div>{start} - {end}</div>
+                        <div className="text-blue-700">Authorized User</div>    
                     </div>
-                    <div>{start} - {end}</div>
-                    <div className="text-blue-700">Authorized User</div>    
+                </div>
+
+                <div className="text-red-700 font-bold underline">
+                    <Link href='/userForm'>
+                        Edit Profile
+                    </Link>
                 </div>
             </div>
 
