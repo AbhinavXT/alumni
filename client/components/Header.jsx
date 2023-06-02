@@ -61,9 +61,9 @@ const Header = ({ session, status }) => {
                                     && 
                                     <button 
                                         className='flex items-center justify-center bg-white px-8 py-2 rounded-lg shadow-md shadow-gray-400 text-black ease-in duration-500'
-                                >
+                                    >
                                     <Link href='/admin'>
-                                        Admin
+                                        {session.user.email !== 'abhinavpathaka17@gmail.com' ? "SubAdmin" : "Admin"}
                                     </Link>
                                 </button>
                                 }

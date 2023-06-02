@@ -75,12 +75,12 @@ const profile = () => {
                     Statistics
                 </button>
 
-                <button 
+                {user !== sub && <button 
                     className="px-4 py-2 hover:shadow-lg hover:shadow-gray-300 rounded-md text-xl"
                     onClick={() => changeCompoenet(2)}
                 >
                     Assign SubAdmin
-                </button>
+                </button>}
 
                 <button 
                     className="px-4 py-2 hover:shadow-lg hover:shadow-gray-300 rounded-md text-xl"
