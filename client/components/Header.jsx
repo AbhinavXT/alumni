@@ -3,17 +3,29 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Navbar from './Navbar'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Header = ({ session, status }) => {
     const [sub, setSub] = useState(null)
 
+    const router = useRouter();
+
     const handleSession = async() => {
         const subAdmin = localStorage.getItem("subAdminEmail")
 
-        console.log(subAdmin)
-
         if(subAdmin)
-            setSub(subAdmin)
+            setSub(subAdmin)      
+    }
+
+    const handleClick = () => {
+        const email = session.user.email
+        const name = session.user.name
+
+        if(email) {
+            router.query.email = email
+            router.route = name
+            router.push(router)
+        }
     }
 
     useEffect(() => {
@@ -46,8 +58,9 @@ const Header = ({ session, status }) => {
                             <div className='flex justify-center items-center gap-x-4'>
                                 <button 
                                     className='flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-md shadow-blue-400 ease-in duration-500'
+                                    onClick={handleClick}
                                 >
-                                    <Link href={`/${session.user.name}`}>
+                                    <Link href={`/${session.user.name}?email=${session.user.email}`}>
                                         {session.user.name}
                                     </Link>
                                 </button>

@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from "react"
+import { getSession } from 'next-auth/react'
 
 import About from "../components/profile/About"
 import Education from "../components/profile/Education"
@@ -9,13 +10,25 @@ import Experience from "../components/profile/Experience"
 
 const profile = () => {
     const [component, setComponent] = useState(0)
+    const [user, setUser] = useState(null)
 
     const router = useRouter();
     const { profile, email, start, end, mobile, exp, org, brief, course, branch } = router.query;
 
     const changeCompoenet = (comp) => {
         setComponent(comp)
-    } 
+    }
+
+    const handleSession = async() => {
+        const session = await getSession()
+        
+        if(session)
+            setUser(session.user.email)
+    }
+
+    useEffect(() => {
+        handleSession()
+    }, [])
     
     return (
         <div className="flex flex-col items-left -mt-6 gap-y-8 py-16 px-96 h-screen">
@@ -40,11 +53,11 @@ const profile = () => {
                     </div>
                 </div>
 
-                <div className="text-red-700 font-bold underline">
+                {user && user === email && <div className="text-red-700 font-bold underline">
                     <Link href='/userForm'>
                         Edit Profile
                     </Link>
-                </div>
+                </div>}
             </div>
 
             <div className="flex justify-center gap-x-24 font-bold px-8">

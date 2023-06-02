@@ -10,13 +10,13 @@ const branches = () => {
     const [branchData, setBranchData] = useState([])
 
     const branch = [
-        {branch:'CSE',memberNum:'6'},
-        {branch:'ME',memberNum:'4'},
-        {branch:'ECE',memberNum:'4'},
-        {branch:'EE',memberNum:'5'},
-        {branch:'CE',memberNum:'3'},
-        {branch:'BT',memberNum:'5'},
-        {branch:'MCA',memberNum:'7'}
+        {branch:'CSE',memberNum:'0'},
+        {branch:'ME',memberNum:'0'},
+        {branch:'ECE',memberNum:'0'},
+        {branch:'EE',memberNum:'0'},
+        {branch:'CE',memberNum:'0'},
+        {branch:'BT',memberNum:'0'},
+        {branch:'MCA',memberNum:'0'}
     ]
     
     const router = useRouter()
