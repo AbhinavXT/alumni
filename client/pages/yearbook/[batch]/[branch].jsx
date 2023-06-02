@@ -15,18 +15,22 @@ const branch = () => {
     const branchName = "";
 
     if(branch === "CSE") {
-        branchName = "Computer Science and Engg."
+        branchName = "Computer Science and Eng."
     } else if(branch === "ME") {
-        branchName = "Mechanical Engg."
+        branchName = "Mechanical Eng."
     } else if(branch === "ECE") {
-        branchName = "Electronics and Comm. Engg."
+        branchName = "Electronics and Comm. Eng."
     } else if(branch === "EE") {
-        branchName = "Electrical Engg."
+        branchName = "Electrical Eng."
     } else if(branch === "CE") {
-        branchName = "Civil Engg."
+        branchName = "Civil Eng."
     } else if(branch === "BT") {
         branchName = "Biotechnology"
-    }
+    } else if(branch === "PE") {
+		branchName = "Production Eng."
+	} else if(branch === "MAA") {
+		branchName = "MCA Department"
+	}
 
 	const getData = () => {
         const { batch, branch } = router.query
