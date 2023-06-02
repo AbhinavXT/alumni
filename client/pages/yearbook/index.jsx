@@ -10,7 +10,7 @@ const yearbook = () => {
             <div className='yearbookGrid'>
                 {batches.map((year, i) => {
                     return (
-                        <Year batch = {year.batch} memberNum = {year.memberNum} key = {i}/>
+                        <Year batch = {year.batch} memberNum={year.memberNum} key = {i}/>
                     )
                 })}
             </div>

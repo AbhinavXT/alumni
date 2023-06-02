@@ -630,7 +630,7 @@
 
 /*branches*/
 .branchesMain {
-    @apply flex flex-col gap-y-16 -mt-60
+    @apply flex flex-col gap-y-16 my-12
 }
 
 .branchesHeader {

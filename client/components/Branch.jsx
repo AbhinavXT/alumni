@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Branch = ({ branch, memberNum, batch }) => {
+const Branch = ({ branchData, branch, batch }) => {
     return (
         <Link
             href={{
@@ -10,8 +10,10 @@ const Branch = ({ branch, memberNum, batch }) => {
             }}
         >
             <div className='branchMain'>
-                <div className='font-bold'>{branch}</div>
-                <div className='text-gray-800'>{memberNum} Member</div>
+                <div className='font-bold text-sm'>{branch}</div>
+                {branchData[branch] &&
+                    <div className='text-gray-800'>{branchData[branch].length} Member</div>
+                }
             </div>
         </Link>
     )

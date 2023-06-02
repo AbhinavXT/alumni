@@ -1,10 +1,14 @@
 import Head from "next/head"
 import Alumni from "../../../components/subComponents/Alumni"
 import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 
 import data from "../../../data/profile.json"
+import yearData from '../../../data/yearbook.json'
 
 const branch = () => {
+	const [branchData, setBranchData] = useState([])
+
     const router = useRouter()
     const { branch, batch } = router.query
 
@@ -24,6 +28,20 @@ const branch = () => {
         branchName = "Biotechnology"
     }
 
+	const getData = () => {
+        const { batch, branch } = router.query
+
+        if(batch && branch) {
+            let year = 2022 - batch
+
+            setBranchData(yearData[year][batch.toString()][0][branch])
+        }
+    }
+
+	useEffect(() => {
+        getData()
+    }, [])
+
   	return (
     	<div className="flex justify-center py-20">
 			<Head>
@@ -31,7 +49,7 @@ const branch = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
     	    <div className='grid grid-cols-4 gap-x-6 gap-y-6 px-96'>
-    	        {data.map((alumni,i) => {
+    	        {branchData && branchData.map((alumni,i) => {
 					return (
 						<Alumni 
                         	image="/i1.png" 

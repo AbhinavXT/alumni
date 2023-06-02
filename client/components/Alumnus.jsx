@@ -1,10 +1,9 @@
 import Alumni from "./subComponents/Alumni"
-import data from "../data/users.json"
 
-const Alumnus = () => {
+const Alumnus = ({ search }) => {
     return (
         <div className='alumnsGridMain'>
-            {data.map((alumni, i) => {
+            {search.map((alumni, i) => {
                 return (
                     <Alumni 
                         image="/i1.png" 
