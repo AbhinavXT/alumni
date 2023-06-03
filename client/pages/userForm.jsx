@@ -37,6 +37,7 @@ const userForm = () => {
         // }
 
         localStorage.setItem("userData", JSON.stringify(formData))
+        localStorage.setItem("userStatus", 1)
 
         router.push('/')
     };
@@ -49,7 +50,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="owner" 
+                    name="profile" 
                     value={formData.profile}
                     onChange={handleChange}
                 />
@@ -59,7 +60,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="title" 
+                    name="email" 
                     value={formData.email}
                     onChange={handleChange}
                 />
@@ -69,7 +70,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="company" 
+                    name="mobile" 
                     value={formData.mobile}
                     onChange={handleChange}
                 />
@@ -79,7 +80,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="location" 
+                    name="course" 
                     value={formData.course}
                     onChange={handleChange}
                 />
@@ -89,7 +90,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="deadline" 
+                    name="branch" 
                     value={formData.branch}
                     onChange={handleChange}
                 />
@@ -99,7 +100,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="salary" 
+                    name="start" 
                     value={formData.start}
                     onChange={handleChange}
                 />
@@ -109,7 +110,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="type" 
+                    name="end" 
                     value={formData.end}
                     onChange={handleChange}
                 />
@@ -119,7 +120,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="link" 
+                    name="org" 
                     value={formData.org}
                     onChange={handleChange}
                 />
@@ -129,7 +130,7 @@ const userForm = () => {
                 <input 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="link" 
+                    name="exp" 
                     value={formData.exp}
                     onChange={handleChange}
                 />
@@ -139,7 +140,7 @@ const userForm = () => {
                 <textarea 
                     className="border-2 border-gray-700 shadow-inner shadow-gray-300 rounded px-2 py-1 text-black" 
                     type="text"
-                    name="link" 
+                    name="brief" 
                     value={formData.brief}
                     onChange={handleChange}
                 />

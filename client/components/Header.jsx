@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 
 const Header = ({ session, status }) => {
     const [sub, setSub] = useState(null)
+    const [user, setUser] = useState(null)
 
     const router = useRouter();
 
@@ -17,19 +18,27 @@ const Header = ({ session, status }) => {
             setSub(subAdmin)      
     }
 
-    const handleClick = () => {
-        const email = session.user.email
-        const name = session.user.name
+    // const handleClick = () => {
+    //     const email = session.user.email
+    //     const name = session.user.name
 
-        if(email) {
-            router.query.email = email
-            router.route = name
-            router.push(router)
-        }
+    //     if(email) {
+    //         router.query.email = email
+    //         router.route = name
+    //         router.push(router)
+    //     }
+    // }
+
+    const getloginUser = () => {
+        const data = localStorage.getItem("userData")
+        
+        if(data !== null)
+            setUser(data)
     }
 
     useEffect(() => {
         handleSession()
+        getloginUser()
     }, [])
 
     return (
@@ -58,11 +67,16 @@ const Header = ({ session, status }) => {
                             <div className='flex justify-center items-center gap-x-4'>
                                 <button 
                                     className='flex items-center justify-center bg-[#1D3557] px-4 py-2 rounded-lg shadow-md shadow-blue-400 ease-in duration-500'
-                                    onClick={handleClick}
                                 >
-                                    <Link href={`/${session.user.name}?email=${session.user.email}`}>
-                                        {session.user.name}
-                                    </Link>
+                                    {user ? (
+                                        <Link href='/loginProfile'>
+                                            {session.user.name}
+                                        </Link>
+                                    ) : (
+                                        <Link href={`/${session.user.name}?email=${session.user.email}`}>
+                                            {session.user.name}
+                                        </Link>
+                                    ) }
                                 </button>
                                 <button 
                                     className='flex items-center justify-center bg-red-800 px-8 py-2 rounded-lg shadow-md shadow-red-400 ease-in duration-500'

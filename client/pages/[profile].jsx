@@ -49,7 +49,11 @@ const profile = () => {
                             <div className="italic">{branch}</div>
                         </div>
                         <div>{start} - {end}</div>
-                        <div className="text-blue-700">Authorized User</div>    
+                        {user == email ? (
+                            <div className="text-red-700">Unauthorized User</div>
+                        ) : (
+                            <div className="text-blue-700">Authorized User</div>
+                        )}
                     </div>
                 </div>
 
