@@ -37,17 +37,6 @@ const SubRequest = ({ request }) => {
                     </button>
                 </div>
             )}
-
-            <div 
-                className={`text-green-700 font-bold ${accept === 0 ? `display-none` : ``}`}
-            >
-                Accepted
-            </div>
-            <div 
-                className={`text-red-700 font-bold ${reject === 0 ? `display-none` : ``}`}
-            >
-                Rejected
-            </div>
         </div>
     )
 }
