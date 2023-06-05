@@ -4,11 +4,6 @@ import Image from 'next/image'
 const team = () => {
     const members = [
         {
-            name: 'Dr. Sanjeev Naithani',
-            post: 'Treasurer',
-            image: '/t1.jpg'
-        },
-        {
             name: 'Chandraveer Singh',
             post: 'Secretary',
             image: '/t2.jpg'
@@ -24,9 +19,9 @@ const team = () => {
             image: '/t4.jpg'
         },
         {
-            name: 'Prof. M.P.S. Chauhan',
+            name: 'Prof. V.N. Kala',
             post: 'Director & Patron',
-            image: '/t5.jpg'
+            image: '/dir.jpg'
         }
     ]
 
