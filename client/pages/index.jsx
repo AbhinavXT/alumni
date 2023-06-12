@@ -24,10 +24,6 @@ const Home = () => {
             </div>
             
             <div>
-                <NotableAlumni />
-            </div>
-            
-            <div>
                 <Info />
             </div>
             
