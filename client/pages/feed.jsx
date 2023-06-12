@@ -44,7 +44,7 @@ const feed = () => {
         console.log(user)
 
         if(data !== null) {
-            if(user === 'abhinavpathaka17@gmail.com' || user === null) {
+            if(user === 'skv176@gmail.com' || user === null) {
                 const newPost = JSON.parse(data)
             
                 feedPosts.push(newPost)
