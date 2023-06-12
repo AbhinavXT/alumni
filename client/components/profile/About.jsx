@@ -6,7 +6,7 @@ const About = (props) => {
             <div className='flex flex-col gap-y-3'>
                 <div className='font-bold text-2xl'>About</div>
                 <div>
-                    {props.brief ? props.brief : "---"}
+                    {props.brief ? props.brief + 'at' + props.org : "---"} 
                 </div>
             </div>
             <div className='flex flex-col gap-y-8'>

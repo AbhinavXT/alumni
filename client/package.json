@@ -19,7 +19,8 @@
     "react-dom": "18.1.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.1",
-    "taos": "^1.0.2"
+    "taos": "^1.0.2",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

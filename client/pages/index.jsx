@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import PhotoCarousel from '../components/PhotoCarousel'
-import Details from '../components/Details'
+import NotableAlumni from '../components/NotableAlumni'
 import Info from '../components/Info'
 import Submissions from '../components/Submissions'
 import Albums from '../components/Albums'
@@ -20,7 +20,11 @@ const Home = () => {
             </div>
             
             <div>
-                <Details />
+                <Memories />
+            </div>
+            
+            <div>
+                <NotableAlumni />
             </div>
             
             <div>
@@ -36,7 +40,7 @@ const Home = () => {
             </div>
 
             <div>
-                <Memories />
+                <Contact />
             </div>
         </div>
     )

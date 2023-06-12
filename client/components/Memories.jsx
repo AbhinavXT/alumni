@@ -25,8 +25,7 @@ const Memories = () => {
     return (
         <div className="memoriesMain">
             <div className="memoriesHeaderTextOuterDiv">
-                <div className="memoriesHeaderTextInnerDivOne">Memories</div>
-                <a href='/feed' className='memoriesHeaderTextInnerDivTwo cursor-pointer'>View All</a>
+                <div className="memoriesHeaderTextInnerDivOne text-red-700">Highlights</div>
             </div>
             <div className='memoriesGrid'>
                 {subMemories.map((subMemories, index) => {
@@ -37,6 +36,7 @@ const Memories = () => {
                             text={subMemories.text}
                             views={subMemories.views}
                             key={index}
+                            feedNum={index}
                         />
                     )
                 })}

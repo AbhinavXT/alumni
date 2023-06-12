@@ -88,7 +88,7 @@ const profile = () => {
             </div>
             
             <div className="">
-                {component === 0 && <About email={email} mobile={mobile} brief={brief} />}
+                {component === 0 && <About email={email} mobile={mobile} brief={brief}  org={org}/>}
                 {component === 1 && <Education start={start} end={end} course={course} branch={branch} />}
                 {component === 2 && <Experience brief={brief} org={org} exp={exp} end={end} />}
             </div>
