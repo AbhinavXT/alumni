@@ -1,6 +1,6 @@
 import express from 'express'
 import { check, validationResult } from 'express-validator'
-import Feed from '../../models/feedModel.js'
+import Feed from '../../models/feed.js'
 
 const router = express.Router();
 

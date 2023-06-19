@@ -1,10 +1,10 @@
 import Head from "next/head"
 import { useState, useEffect } from "react"
+import axios from 'axios'
 
 import Alumnus from "../components/Alumnus"
 
 import data from "../data/users.json"
-import searchData from "../data/profile.json"
 
 const directory = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -15,7 +15,20 @@ const directory = () => {
         console.log(event.target.value)
     }
 
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('http://localhost:5000/api/directory');
+            console.log(response.data);
+            // Optionally, you can display a success message or perform additional actions here
+        } catch (error) {
+            console.error('Failed to submit form', error);
+            // Optionally, you can display an error message or handle the error
+        }
+    }
+
     useEffect(() => {
+        fetchData()
+
         const results = data.filter((user) =>
             user["First Name"].toLowerCase().includes(searchTerm.toLowerCase())
         );

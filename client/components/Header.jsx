@@ -84,13 +84,13 @@ const Header = ({ session, status }) => {
                                 >
                                     SignOut
                                 </button>
-                                {(session.user.email === 'skv176@gmail.com' || session.user.email === sub)
+                                {(session.user.email === 'abhinavpathaka17@gmail.com' || session.user.email === 'skv176@gmail.com' || session.user.email === sub)
                                     && 
                                     <button 
                                         className='flex items-center justify-center bg-white px-8 py-2 rounded-lg shadow-md shadow-gray-400 text-black ease-in duration-500'
                                     >
                                     <Link href='/admin'>
-                                        {session.user.email !== 'skv176@gmail.com' ? "SubAdmin" : "Admin"}
+                                        {session.user.email !== 'abhinavpathaka17@gmail.com' ? "SubAdmin" : "Admin"}
                                     </Link>
                                 </button>
                                 }

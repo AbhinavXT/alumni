@@ -96,7 +96,7 @@ const Database = () => {
 						</div>
 					</a>
 					<a 
-						href="/data/users.json"
+						href="/data/allData.xlsx"
 						download
 						className="flex gap-x-2 items-center cursor-pointer bg-[#0D2E71] text-white shadow-md shadow-blue-900 px-4 py-2 rounded font-bold"
 						
