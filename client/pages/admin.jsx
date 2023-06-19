@@ -50,7 +50,7 @@ const profile = () => {
         setComponent(comp)
     }
 
-    if(user !== 'abhinavpathaka17@gmail.com' || session.user.email === 'skv176@gmail.com' && user !== sub) {
+    if(user !== 'abhinavpathaka17@gmail.com' || user === 'skv176@gmail.com' && user !== sub) {
         return (
             <div className="flex justify-center items-center text-2xl text-red-700">You are not authorized to access this page</div>
         )
