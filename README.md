@@ -38,6 +38,18 @@ For running frontend locally run command:
 npm run dev
 ```
 
+### Environmental Variables
+```
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+LINKEDIN_CLIENT_ID=
+LINKEDIN_CLIENT_SECRET=
+
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+```
+
 ## Directory Information
 
 - `components` - The `components` folder in the `alumni` repository is where you provided contains JavaScript files that define components for the application.
