@@ -3,7 +3,6 @@ import Alumni from "../../../components/subComponents/Alumni"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
-import data from "../../../data/profile.json"
 import yearData from '../../../data/yearbook.json'
 
 const branch = () => {
